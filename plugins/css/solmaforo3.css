@@ -1,0 +1,154 @@
+/*archivo de prueba solo para agragar estilos a HTML, CRADO HOY 22/09/2017*/
+body{
+  background-color: #B0BFD3;
+}
+header{
+  background-color:#003479;
+}
+/***************************/
+.logo{
+  padding-top: 22px;
+  height: 110px;
+}
+/*Estilos solo para el enlace "solmaforo"*/
+.sol1{
+position: relative;
+max-width: 45%;
+height: auto;
+}
+@media (max-width: 768px) {
+.sol1{
+position: relative;
+max-width: 50%;
+height: auto;}
+}
+/*Estilos solo para el enlace "solmaforo"*/
+/*Estilos solo para el enlace Inf. General"*/
+.sol2{
+position: relative;
+max-width: 65%;
+height: auto;
+}
+@media (max-width: 768px) {
+.sol2{
+position: relative;
+max-width: 65%;
+height: auto;}
+}
+/*Estilos solo para el enlace General*/
+/*Esto es para posicionar el logo en el menú de navegacion*/
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+}
+.navbar-brand img {
+  height: 100%;
+  padding: 10px; /* firefox bug fix */
+  width: auto;
+}
+/*Esto es para posicionar el logo en el menú de navegacion*/
+h1{
+  color: #FFFFFF;
+  font-size: 40px;
+}
+h4{
+  background-color:#003479;
+  color: #FFFFFF;
+  /*para lograr centrar el titulo*//*
+  height: 30px;
+  padding-top: 6px;*/
+}
+/*Con esto reducimos el tamaño de letra, para resoluciones moviles*/
+@media (max-width: 768px) {
+h4{
+font-size: 15px;
+}
+}
+/*Con esto reducimos el tamaño de letra, para resoluciones moviles*/
+
+/*Estilos para todos los parrafos*/
+p:first-line{
+  font-weight: bold;
+  color: #cb6115;
+}
+p{
+  background-color: #fbfbfb;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+/************************/
+footer{
+background-color: #003479;
+}
+.pie{
+    color: #FFFFFF;
+}
+.reporte{
+	background-image: url(C:/Users/Antonio/Desktop/bootstrap-3.3.7-dist/img/fondo.jpg);
+	background-position: center center;
+	/* La imagen de fondo no se repite */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+/**************ESTILOS SOLO PARA EL MENÚ**/
+.navbar-default{
+  background-color: #f0f4f6;
+  border-color: 0; /*Mismo color*/
+  border-radius:  0;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-collapse:hover
+.navbar-default .navbar-collapse:focus {
+color:#103273;
+}
+.navbar-default .navbar-nav>li>a{
+  color:#103273;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus{
+  /*Esto es para pag. principal color de fondo de la pestaña "INICIO"*/
+  background-color: #ccdde2; /*Mismo color*/
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus{
+  color: #103273;
+  background-color: 0; /*Mismo color*/
+}
+.navbar-default .navbar-text{
+  border-color: #103273;
+}
+.navbar-default .navbar-toggle{
+  border-color: 0; /*Mismo color*/
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus{
+  border-color: 0;/*Mismo color*/
+}
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #103273;
+}
+/********TERMINA ESTILOS SOLO PARA EL MENÚ**/
+/****Estilos solo para la tabla**/
+table {
+   width: 100%;
+   border: 1px solid #000;
+   background-color: #fbfbfb;
+}
+th, td {
+   width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 1px solid #000;
+   border-collapse: collapse;
+   padding: 0.4em;
+}
+th {
+   background: #eee;
+   color: #ffffff;
+}
+table th {background-color: #003479;
+}
+/****Termina Estilos solo para la tabla**/

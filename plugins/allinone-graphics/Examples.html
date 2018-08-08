@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://canvas-gauges.com/documentation/examples/ -->
+<html class="js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths wf-lato-n4-active wf-lato-n7-active wf-lato-i4-active wf-volkhov-n4-active wf-active" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title> Examples</title><link rel="stylesheet" type="text/css" href="./Examples_files/styles.css"><meta name="description" content="Canvas gauges are open source minimalist HTML5-based components for web applications."><meta name="google-site-verification" content="wFD3e9Rk0sQbJb7dF8PeEPXUaAFn-eSEZcYGCTfbWLo"><meta name="msvalidate.01" content="73C5C16D6349B184E8067E5619C15A35"><meta name="yandex-verification" content="b8f0ebc57e3b5d32"><link rel="author" href="https://plus.google.com/u/0/+MykhailoStadnyk"><meta property="og:title" content=" Examples"><meta property="og:description" content="Canvas gauges are open source minimalist HTML5-based components for web applications."><meta property="og:url" content="https://canvas-gauges.com/documentation/examples/"><meta property="og:locale" content="en_US"><meta property="og:type" content="website"><meta property="og:site_name" content="Canvas Gauges"><meta property="og:image" content="https://canvas-gauges.com/images/thumbnail.png"><link type="text/plain" rel="author" href="https://canvas-gauges.com/humans.txt"><link rel="icon" sizes="16x16" href="https://canvas-gauges.com/assets/img/favicon-16x16.png?v=2"><link rel="icon" sizes="32x32" href="https://canvas-gauges.com/assets/img/favicon-32x32.png?v=2"><link rel="icon" sizes="192x192" href="https://canvas-gauges.com/assets/img/touch-icon-192x192.png?v=2"><link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://canvas-gauges.com/assets/img/apple-touch-icon-180x180-precomposed.png?v=2"><link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://canvas-gauges.com/assets/img/apple-touch-icon-152x152-precomposed.png?v=2"><link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://canvas-gauges.com/assets/img/apple-touch-icon-144x144-precomposed.png?v=2"><link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://canvas-gauges.com/assets/img/apple-touch-icon-120x120-precomposed.png?v=2"><link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://canvas-gauges.com/assets/img/apple-touch-icon-114x114-precomposed.png?v=2"><link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://canvas-gauges.com/assets/img/apple-touch-icon-76x76-precomposed.png?v=2"><link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://canvas-gauges.com/assets/img/apple-touch-icon-72x72-precomposed.png?v=2"><link rel="apple-touch-icon-precomposed" href="https://canvas-gauges.com/assets/img/apple-touch-icon-precomposed.png?v=2"><meta name="msapplication-TileImage" content="//canvas-gauges.com/assets/img/mstile-144x144.png?v=2"><meta name="msapplication-TileColor" content="#fabb00?v=2"><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style><meta class="foundation-mq-topbar"><link rel="stylesheet" href="./Examples_files/css" media="all"><link rel="stylesheet" type="text/css" href="./Examples_files/prettify.css"></head><body id="top-of-page" class="page-fullwidth f-topbar-fixed"><div id="navigation" class="sticky fixed"><nav class="top-bar" role="navigation" data-topbar=""><ul class="title-area"><li class="name"><h1 class="show-for-small-only"><a href="https://canvas-gauges.com/" class="icon-canv-gauge"> Canvas Gauges</a></h1></li><li class="toggle-topbar menu-icon"><a href="https://canvas-gauges.com/documentation/examples/#"><span>Navigation</span></a></li></ul><section class="top-bar-section"><ul class="right"><li class="divider"></li><li class=""><a href="https://canvas-gauges.com/search/" class="icon-search">Search</a></li></ul><ul class="left"><li class=""><a href="https://canvas-gauges.com/" class="icon-home">Home</a></li><li class="divider"></li><li class="has-dropdown not-click"> <a href="https://canvas-gauges.com/documentation/" class="icon-docs">Documentation</a><ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-large-up"><a class="parent-link js-generated" href="https://canvas-gauges.com/documentation/">Documentation</a></li><li><a href="https://canvas-gauges.com/documentation/user-guide/" class="icon-user-guide">User Guide</a></li><li><a href="https://canvas-gauges.com/documentation/api/" class="icon-api-docs">Developer's API Docs</a></li><li><a href="https://canvas-gauges.com/documentation/examples/" class="icon-examples">Examples</a></li></ul></li><li class="divider"></li><li class=""><a href="https://canvas-gauges.com/download/" class="icon-download">Download</a></li><li class="divider"></li><li class=""><a href="http://github.com/Mikhus/canvas-gauges" target="_blank" class="icon-github">Fork Me</a></li><li class="divider"></li></ul></section></nav></div><nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs"> <a href="https://canvas-gauges.com/">Home</a> <a href="https://canvas-gauges.com/documentation/">documentation</a> <a class="current"><span class="icon-examples"></span> Examples</a></nav><div class="row t30"><div class="medium-12 columns"><article><header><p class="subheadline">Gauges Use Examples</p><h1><span class="icon-examples"></span> Examples</h1></header><script async="" src="./Examples_files/analytics.js.descarga"></script><script>var examplePage=true</script><p>Canvas Gauges are <strong>highly configurable</strong>. So you may use your fantasy to draw variety of gauges of different look and feel, displaying different kind of information.</p><p><strong>All gauges on this page are interactive. Click the gauge to get it’s code. Mouse over to animate (or touch and wait for animation on mobile devices).</strong></p><h2 id="zero-configuration-gauges">Zero Configuration Gauges</h2><p>Minimum declaration!</p><div class="row"><div class="medium-4 columns example"> <canvas data-type="radial-gauge" width="333" height="200" style="width: 333px; height: 200px;" title="Click me to get my code!"></canvas></div><div class="medium-4 columns example"> <canvas data-type="linear-gauge" width="334" height="200" style="width: 334px; height: 200px;" title="Click me to get my code!"></canvas></div><div class="medium-4 columns example text-center"> <canvas data-width="100" data-type="linear-gauge" width="100" height="200" style="width: 100px; height: 200px;" title="Click me to get my code!"></canvas></div></div><h2 id="radial-gauges-as-compass">Radial Gauges as Compass</h2><p>Compass wanted?</p><div class="row"><div class="medium-3 columns example"> <canvas data-type="radial-gauge" data-min-value="0" data-max-value="360" data-major-ticks="N,NE,E,SE,S,SW,W,NW,N" data-minor-ticks="22" data-ticks-angle="360" data-start-angle="180" data-stroke-ticks="false" data-highlights="false" data-color-plate="#222" data-color-major-ticks="#f5f5f5" data-color-minor-ticks="#ddd" data-color-numbers="#ccc" data-color-needle="rgba(240, 128, 128, 1)" data-color-needle-end="rgba(255, 160, 122, .9)" data-value-box="false" data-value-text-shadow="false" data-color-circle-inner="#fff" data-color-needle-circle-outer="#ccc" data-needle-circle-size="15" data-needle-circle-outer="false" data-animation-rule="linear" data-needle-type="line" data-needle-start="75" data-needle-end="99" data-needle-width="3" data-borders="true" data-border-inner-width="0" data-border-middle-width="0" data-border-outer-width="10" data-color-border-outer="#ccc" data-color-border-outer-end="#ccc" data-color-needle-shadow-down="#222" data-border-shadow-width="0" data-animation-duration="1500" width="250" height="202" style="width: 250px; height: 202px;" title="Click me to get my code!"></canvas><p>animated needle</p></div><div class="medium-3 columns example"> <canvas data-type="radial-gauge" data-min-value="0" data-max-value="360" data-major-ticks="N,NE,E,SE,S,SW,W,NW,N" data-minor-ticks="22" data-ticks-angle="360" data-start-angle="180" data-stroke-ticks="false" data-highlights="false" data-color-plate="#a33" data-color-major-ticks="#f5f5f5" data-color-minor-ticks="#ddd" data-color-numbers="#ccc" data-color-needle="rgba(240, 128, 128, 1)" data-color-needle-end="rgba(255, 160, 122, .9)" data-value-box="false" data-value-text-shadow="false" data-color-circle-inner="#fff" data-color-needle-circle-outer="#ccc" data-needle-circle-size="15" data-needle-circle-outer="false" data-animation-rule="linear" data-needle-type="line" data-needle-start="75" data-needle-end="99" data-needle-width="3" data-borders="true" data-border-inner-width="0" data-border-middle-width="0" data-border-outer-width="10" data-color-border-outer="#ccc" data-color-border-outer-end="#ccc" data-color-needle-shadow-down="#222" data-border-shadow-width="0" data-animation-target="plate" data-animation-duration="1500" data-value="45.5" data-animate-on-init="true" width="250" height="202" style="width: 250px; height: 202px;" title="Click me to get my code!"></canvas><p>animated plate</p></div><div class="medium-3 columns example"> <canvas data-type="radial-gauge" data-min-value="0" data-max-value="360" data-major-ticks="N,NE,E,SE,S,SW,W,NW,N" data-minor-ticks="22" data-ticks-angle="360" data-start-angle="180" data-stroke-ticks="false" data-highlights="false" data-color-plate="#3a3" data-color-major-ticks="#f5f5f5" data-color-minor-ticks="#ddd" data-color-numbers="#ccc" data-color-needle="rgba(240, 128, 128, 1)" data-color-needle-end="rgba(255, 160, 122, .9)" data-value-box="false" data-value-text-shadow="false" data-color-circle-inner="#fff" data-color-needle-circle-outer="#ccc" data-needle-circle-size="15" data-needle-circle-outer="false" data-animation-rule="linear" data-needle-type="line" data-needle-start="75" data-needle-end="99" data-needle-width="3" data-borders="true" data-border-inner-width="0" data-border-middle-width="0" data-border-outer-width="10" data-color-border-outer="#ccc" data-color-border-outer-end="#ccc" data-color-needle-shadow-down="#222" data-border-shadow-width="0" data-animation-duration="1500" width="250" height="202" style="width: 250px; height: 202px;" title="Click me to get my code!"></canvas><p>animated needle</p></div><div class="medium-3 columns example"> <canvas data-type="radial-gauge" data-min-value="0" data-max-value="360" data-major-ticks="N,NE,E,SE,S,SW,W,NW,N" data-minor-ticks="22" data-ticks-angle="360" data-start-angle="180" data-stroke-ticks="false" data-highlights="false" data-color-plate="#33a" data-color-major-ticks="#f5f5f5" data-color-minor-ticks="#ddd" data-color-numbers="#ccc" data-color-needle="rgba(240, 128, 128, 1)" data-color-needle-end="rgba(255, 160, 122, .9)" data-value-box="false" data-value-text-shadow="false" data-color-circle-inner="#fff" data-color-needle-circle-outer="#ccc" data-needle-circle-size="15" data-needle-circle-outer="false" data-animation-rule="linear" data-needle-type="line" data-needle-start="75" data-needle-end="99" data-needle-width="3" data-borders="true" data-border-inner-width="0" data-border-middle-width="0" data-border-outer-width="10" data-color-border-outer="#ccc" data-color-border-outer-end="#ccc" data-color-needle-shadow-down="#222" data-border-shadow-width="0" data-animation-target="plate" data-units="ᵍ" data-title="DIRECTION" data-font-title-size="19" data-color-title="#f5f5f5" data-animation-duration="1500" width="250" height="202" style="width: 250px; height: 202px;" title="Click me to get my code!"></canvas><p>animated plate</p></div></div><h2 id="other-custom-radial-gauges">Other Custom Radial Gauges</h2><p>A bit more custom views:</p><div class="row"><div class="medium-6 columns example"> <canvas data-type="radial-gauge" data-width="300" data-height="300" data-units="Km/h" data-min-value="0" data-max-value="220" data-major-ticks="0,20,40,60,80,100,120,140,160,180,200,220" data-minor-ticks="2" data-stroke-ticks="true" data-highlights="[{&quot;from&quot;: 160, &quot;to&quot;: 220, &quot;color&quot;: &quot;rgba(200, 50, 50, .75)&quot;}]" data-color-plate="#fff" data-border-shadow-width="0" data-borders="false" data-needle-type="arrow" data-needle-width="2" data-needle-circle-size="7" data-needle-circle-outer="true" data-needle-circle-inner="false" data-animation-duration="1500" data-animation-rule="linear" width="300" height="300" style="width: 300px; height: 300px;" title="Click me to get my code!"></canvas><p>no-borders</p></div><div class="medium-6 columns example"> <canvas data-type="radial-gauge" data-width="300" data-height="300" data-units="Km/h" data-min-value="0" data-start-angle="90" data-ticks-angle="180" data-value-box="false" data-max-value="220" data-major-ticks="0,20,40,60,80,100,120,140,160,180,200,220" data-minor-ticks="2" data-stroke-ticks="true" data-highlights="[{&quot;from&quot;: 160, &quot;to&quot;: 220, &quot;color&quot;: &quot;rgba(200, 50, 50, .75)&quot;}]" data-color-plate="#fff" data-border-shadow-width="0" data-borders="false" data-needle-type="arrow" data-needle-width="2" data-needle-circle-size="7" data-needle-circle-outer="true" data-needle-circle-inner="false" data-animation-duration="1500" data-animation-rule="linear" width="300" height="300" style="width: 300px; height: 300px;" title="Click me to get my code!"></canvas><p>half-gauge ticks horizontal</p></div></div><div class="row"><div class="medium-6 columns example"> <canvas data-type="radial-gauge" data-width="300" data-height="300" data-units="Km/h" data-min-value="0" data-start-angle="0" data-ticks-angle="180" data-value-box="false" data-max-value="220" data-major-ticks="0,20,40,60,80,100,120,140,160,180,200,220" data-minor-ticks="2" data-stroke-ticks="true" data-highlights="[{&quot;from&quot;: 160, &quot;to&quot;: 220, &quot;color&quot;: &quot;rgba(200, 50, 50, .75)&quot;}]" data-color-plate="#fff" data-border-shadow-width="0" data-borders="false" data-needle-type="arrow" data-needle-width="2" data-needle-circle-size="7" data-needle-circle-outer="true" data-needle-circle-inner="false" data-animation-duration="1500" data-animation-rule="linear" data-animation-target="plate" width="300" height="300" style="width: 300px; height: 300px;" title="Click me to get my code!"></canvas><p>half-gauge ticks vertical (animated plate)</p></div><div class="medium-6 columns example"> <canvas data-type="radial-gauge" data-width="300" data-height="300" data-units="°C" data-title="Temperature" data-min-value="-50" data-max-value="50" data-major-ticks="[-50,-40,-30,-20,-10,0,10,20,30,40,50]" data-minor-ticks="2" data-stroke-ticks="true" data-highlights="[ {&quot;from&quot;: -50, &quot;to&quot;: 0, &quot;color&quot;: &quot;rgba(0,0, 255, .3)&quot;}, {&quot;from&quot;: 0, &quot;to&quot;: 50, &quot;color&quot;: &quot;rgba(255, 0, 0, .3)&quot;} ]" data-ticks-angle="225" data-start-angle="67.5" data-color-major-ticks="#ddd" data-color-minor-ticks="#ddd" data-color-title="#eee" data-color-units="#ccc" data-color-numbers="#eee" data-color-plate="#222" data-border-shadow-width="0" data-borders="true" data-needle-type="arrow" data-needle-width="2" data-needle-circle-size="7" data-needle-circle-outer="true" data-needle-circle-inner="false" data-animation-duration="1500" data-animation-rule="linear" data-color-border-outer="#333" data-color-border-outer-end="#111" data-color-border-middle="#222" data-color-border-middle-end="#111" data-color-border-inner="#111" data-color-border-inner-end="#333" data-color-needle-shadow-down="#333" data-color-needle-circle-outer="#333" data-color-needle-circle-outer-end="#111" data-color-needle-circle-inner="#111" data-color-needle-circle-inner-end="#222" data-value-box-border-radius="0" data-color-value-box-rect="#222" data-color-value-box-rect-end="#333" width="300" height="300" style="width: 300px; height: 300px;" title="Click me to get my code!"></canvas><p>more custom coloring</p></div></div><h2 id="other-custom-linear-gauges">Other Custom Linear Gauges</h2><div class="row"><div class="medium-6 columns example"> <canvas data-type="linear-gauge" data-width="120" data-height="400" data-units="°C" data-min-value="0" data-max-value="220" data-major-ticks="0,20,40,60,80,100,120,140,160,180,200,220" data-minor-ticks="2" data-stroke-ticks="true" data-highlights="[ {&quot;from&quot;: 100, &quot;to&quot;: 220, &quot;color&quot;: &quot;rgba(200, 50, 50, .75)&quot;} ]" data-color-plate="#fff" data-border-shadow-width="0" data-borders="false" data-needle-type="arrow" data-needle-width="2" data-animation-duration="1500" data-animation-rule="linear" data-tick-side="left" data-number-side="left" data-needle-side="left" data-bar-stroke-width="7" data-bar-begin-circle="false" data-value="75" width="120" height="400" style="width: 120px; height: 400px;" title="Click me to get my code!"></canvas></div><div class="medium-6 columns example"> <canvas data-type="linear-gauge" data-width="120" data-height="400" data-units="°C" data-min-value="0" data-start-angle="90" data-ticks-angle="180" data-value-box="false" data-max-value="220" data-major-ticks="0,20,40,60,80,100,120,140,160,180,200,220" data-minor-ticks="2" data-stroke-ticks="true" data-highlights="[ {&quot;from&quot;: 100, &quot;to&quot;: 220, &quot;color&quot;: &quot;rgba(200, 50, 50, .75)&quot;} ]" data-color-plate="#fff" data-border-shadow-width="0" data-borders="false" data-needle-type="arrow" data-needle-width="2" data-needle-circle-size="7" data-needle-circle-outer="true" data-needle-circle-inner="false" data-animation-duration="1500" data-animation-rule="linear" data-bar-width="10" data-value="35" width="120" height="400" style="width: 120px; height: 400px;" title="Click me to get my code!"></canvas></div></div><div class="row"><div class="medium-6 columns example"> <canvas data-type="linear-gauge" data-width="400" data-height="150" data-min-value="0" data-max-value="100" data-major-ticks="0,20,40,60,80,100" data-minor-ticks="10" data-stroke-ticks="true" data-color-plate="#fff" data-border-shadow-width="0" data-borders="false" data-bar-begin-circle="false" data-tick-side="left" data-number-side="left" data-needle-side="left" data-needle-type="line" data-needle-width="3" data-color-needle="#222" data-color-needle-end="#222" data-animation-duration="1500" data-animation-rule="linear" data-animation-target="plate" data-bar-width="5" data-ticks-width="50" data-ticks-width-minor="15" width="400" height="150" style="width: 400px; height: 150px;" title="Click me to get my code!"></canvas></div><div class="medium-6 columns example"> <canvas data-type="linear-gauge" data-width="400" data-height="150" data-units="°C" data-title="Temperature" data-min-value="-50" data-max-value="50" data-major-ticks="[-50,-40,-30,-20,-10,0,10,20,30,40,50]" data-minor-ticks="5" data-stroke-ticks="true" data-ticks-width="15" data-ticks-width-minor="7.5" data-highlights="[ {&quot;from&quot;: -50, &quot;to&quot;: 0, &quot;color&quot;: &quot;rgba(0,0, 255, .3)&quot;}, {&quot;from&quot;: 0, &quot;to&quot;: 50, &quot;color&quot;: &quot;rgba(255, 0, 0, .3)&quot;} ]" data-color-major-ticks="#ffe66a" data-color-minor-ticks="#ffe66a" data-color-title="#eee" data-color-units="#ccc" data-color-numbers="#eee" data-color-plate="#2465c0" data-color-plate-end="#327ac0" data-border-shadow-width="0" data-borders="false" data-border-radius="10" data-needle-type="arrow" data-needle-width="3" data-animation-duration="1500" data-animation-rule="linear" data-color-needle="#222" data-color-needle-end="" data-color-bar-progress="#327ac0" data-color-bar="#f5f5f5" data-bar-stroke="0" data-bar-width="8" data-bar-begin-circle="false" width="400" height="150" style="width: 400px; height: 150px;" title="Click me to get my code!"></canvas></div></div><h2 id="more-examples-from-source-code">More Examples From Source Code</h2><p>The examples below mainly used to test/observe some selected gauges features. Feel free to learn how to do different things using the examples and their source code.</p><ul><li><a href="https://rawgit.com/Mikhus/canvas-gauges/master/examples/radial-component.html">Radial gauges as HTML components</a> [<a href="https://github.com/Mikhus/canvas-gauges/blob/master/examples/radial-component.html">Source</a>]</li><li><a href="https://rawgit.com/Mikhus/canvas-gauges/master/examples/linear-component.html">Linear gauges as HTML components</a> [<a href="https://github.com/Mikhus/canvas-gauges/blob/master/examples/linear-component.html">Source</a>]</li><li><a href="https://rawgit.com/Mikhus/canvas-gauges/master/examples/async.html">Async loading</a> [<a href="https://github.com/Mikhus/canvas-gauges/blob/master/examples/async.html">Source</a>]</li><li><a href="https://rawgit.com/Mikhus/canvas-gauges/master/examples/events.html">Using events</a> [<a href="https://github.com/Mikhus/canvas-gauges/blob/master/examples/events.html">Source</a>]</li><li><a href="https://rawgit.com/Mikhus/canvas-gauges/master/examples/issue-63.html">Setting values</a> [<a href="https://github.com/Mikhus/canvas-gauges/blob/master/examples/issue-63.html">Source</a>]</li><li><a href="https://rawgit.com/Mikhus/canvas-gauges/master/examples/linear-min-non-zero.html">Linear gauges with non-zero min value</a> [<a href="https://github.com/Mikhus/canvas-gauges/blob/master/examples/linear-min-non-zero.html">Source</a>]</li><li><a href="https://rawgit.com/Mikhus/canvas-gauges/master/examples/no-auto-init.html">Deferred initialization of HTML components</a> [<a href="https://github.com/Mikhus/canvas-gauges/blob/master/examples/no-auto-init.html">Source</a>]</li><li><a href="https://rawgit.com/Mikhus/canvas-gauges/master/examples/outrange.html">Outranged values</a> [<a href="https://github.com/Mikhus/canvas-gauges/blob/master/examples/outrange.html">Source</a>]</li><li><a href="https://rawgit.com/Mikhus/canvas-gauges/master/examples/radial-min-path.html">Using min path of rotation at 360-degree radial gauges</a> [<a href="https://github.com/Mikhus/canvas-gauges/blob/master/examples/radial-min-path.html">Source</a>]</li><li><a href="https://rawgit.com/Mikhus/canvas-gauges/master/examples/scripted.html">Scripted gauge initialization</a> [<a href="https://github.com/Mikhus/canvas-gauges/blob/master/examples/scripted.html">Source</a>]</li><li><a href="https://rawgit.com/Mikhus/canvas-gauges/master/examples/radial-bar.html">Radial gauges with progress bar</a> [<a href="https://github.com/Mikhus/canvas-gauges/blob/master/examples/radial-bar.html">Source</a>]</li><li><a href="https://rawgit.com/Mikhus/canvas-gauges/master/examples/exact-ticks-bar.html">Custom exact-value tick bars</a> [<a href="https://github.com/Mikhus/canvas-gauges/blob/master/examples/exact-ticks-bar.html">Source</a>]</li></ul></article></div></div><div id="up-to-top" class="row"><div class="small-12 columns" style="text-align: right;"> <a class="iconfont" href="https://canvas-gauges.com/documentation/examples/#top-of-page"></a></div></div><footer id="footer-content" class="bg-grau"><div id="footer"><div class="row"><div class="medium-6 large-5 columns"><h5 class="shadow-black">About This Site</h5><p class="shadow-black"> Canvas gauges are open source minimalist HTML5-based components for web applications.</p></div><div class="small-6 medium-3 large-3 large-offset-1 columns"><h5 class="shadow-black">Services</h5><ul class="no-bullet shadow-black footer-icons"><li> <a href="https://canvas-gauges.com/" title=""></a></li><li> <a href="https://canvas-gauges.com/feed.xml" title="Subscribe to RSS Feed">RSS</a></li><li> <a href="https://canvas-gauges.com/atom.xml" title="Subscribe to Atom Feed">Atom</a></li><li> <a href="https://canvas-gauges.com/sitemap.xml" title="Sitemap for Google Webmaster Tools">sitemap.xml</a></li></ul></div><div class="small-6 medium-3 large-3 columns"><h5 class="shadow-black">Network</h5><ul class="no-bullet shadow-black footer-icons"><li> <a href="https://canvas-gauges.com/" title="" class=""></a></li><li> <a href="http://github.com/Mikhus/canvas-gauges" target="_blank" title="Fork Canvas Gauges on GitHub..." class="icon-github">GitHub</a></li></ul></div></div></div><div id="subfooter"> </div></footer><script src="./Examples_files/bundle.js.descarga"></script><div id="shade-cover" style="display: none;"></div><div id="tabs-container0" class="tabs-container" style="display: none;">                    <input id="tab-html0" type="radio" class="tab-html" name="tab-group">                    <label for="tab-html0">HTML</label>                    <input id="tab-js0" type="radio" class="tab-js" name="tab-group">                    <label for="tab-js0">JS</label>                    <span class="icon-circle-with-cross"></span>                    <div class="tabs-content">                        <pre class="tab-html-content prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;canvas</span><span class="pln"> </span><span class="atn">data-type</span><span class="pun">=</span><span class="atv">"radial-gauge"</span><span class="tag">&gt;&lt;/canvas&gt;</span></pre>                        <pre class="tab-js-content prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> gauge </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RadialGauge</span><span class="pun">({</span><span class="pln">
+    renderTo</span><span class="pun">:</span><span class="pln"> </span><span class="str">'canvas-id'</span><span class="pln">
+</span><span class="pun">}).</span><span class="pln">draw</span><span class="pun">();</span></pre>                    </div>                </div><div id="tabs-container1" class="tabs-container" style="display: none;">                    <input id="tab-html1" type="radio" class="tab-html" name="tab-group">                    <label for="tab-html1">HTML</label>                    <input id="tab-js1" type="radio" class="tab-js" name="tab-group">                    <label for="tab-js1">JS</label>                    <span class="icon-circle-with-cross"></span>                    <div class="tabs-content">                        <pre class="tab-html-content prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;canvas</span><span class="pln"> </span><span class="atn">data-type</span><span class="pun">=</span><span class="atv">"linear-gauge"</span><span class="tag">&gt;&lt;/canvas&gt;</span></pre>                        <pre class="tab-js-content prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> gauge </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">LinearGauge</span><span class="pun">({</span><span class="pln">
+    renderTo</span><span class="pun">:</span><span class="pln"> </span><span class="str">'canvas-id'</span><span class="pln">
+</span><span class="pun">}).</span><span class="pln">draw</span><span class="pun">();</span></pre>                    </div>                </div><div id="tabs-container2" class="tabs-container" style="display: none;">                    <input id="tab-html2" type="radio" class="tab-html" name="tab-group">                    <label for="tab-html2">HTML</label>                    <input id="tab-js2" type="radio" class="tab-js" name="tab-group">                    <label for="tab-js2">JS</label>                    <span class="icon-circle-with-cross"></span>                    <div class="tabs-content">                        <pre class="tab-html-content prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;canvas</span><span class="pln"> </span><span class="atn">data-width</span><span class="pun">=</span><span class="atv">"100"</span><span class="pln"> </span><span class="atn">data-type</span><span class="pun">=</span><span class="atv">"linear-gauge"</span><span class="tag">&gt;&lt;/canvas&gt;</span></pre>                        <pre class="tab-js-content prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> gauge </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">LinearGauge</span><span class="pun">({</span><span class="pln">
+    renderTo</span><span class="pun">:</span><span class="pln"> </span><span class="str">'canvas-id'</span><span class="pun">,</span><span class="pln">
+    width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pln">
+</span><span class="pun">}).</span><span class="pln">draw</span><span class="pun">();</span></pre>                    </div>                </div><div id="tabs-container3" class="tabs-container" style="display: none;">                    <input id="tab-html3" type="radio" class="tab-html" name="tab-group">                    <label for="tab-html3">HTML</label>                    <input id="tab-js3" type="radio" class="tab-js" name="tab-group">                    <label for="tab-js3">JS</label>                    <span class="icon-circle-with-cross"></span>                    <div class="tabs-content">                        <pre class="tab-html-content prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;canvas</span><span class="pln"> </span><span class="atn">data-type</span><span class="pun">=</span><span class="atv">"radial-gauge"</span><span class="pln">
+    </span><span class="atn">data-min-value</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-max-value</span><span class="pun">=</span><span class="atv">"360"</span><span class="pln">
+    </span><span class="atn">data-major-ticks</span><span class="pun">=</span><span class="atv">"N,NE,E,SE,S,SW,W,NW,N"</span><span class="pln">
+    </span><span class="atn">data-minor-ticks</span><span class="pun">=</span><span class="atv">"22"</span><span class="pln">
+    </span><span class="atn">data-ticks-angle</span><span class="pun">=</span><span class="atv">"360"</span><span class="pln">
+    </span><span class="atn">data-start-angle</span><span class="pun">=</span><span class="atv">"180"</span><span class="pln">
+    </span><span class="atn">data-stroke-ticks</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-highlights</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-color-plate</span><span class="pun">=</span><span class="atv">"#222"</span><span class="pln">
+    </span><span class="atn">data-color-major-ticks</span><span class="pun">=</span><span class="atv">"#f5f5f5"</span><span class="pln">
+    </span><span class="atn">data-color-minor-ticks</span><span class="pun">=</span><span class="atv">"#ddd"</span><span class="pln">
+    </span><span class="atn">data-color-numbers</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-color-needle</span><span class="pun">=</span><span class="atv">"rgba(240, 128, 128, 1)"</span><span class="pln">
+    </span><span class="atn">data-color-needle-end</span><span class="pun">=</span><span class="atv">"rgba(255, 160, 122, .9)"</span><span class="pln">
+    </span><span class="atn">data-value-box</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-value-text-shadow</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-color-circle-inner</span><span class="pun">=</span><span class="atv">"#fff"</span><span class="pln">
+    </span><span class="atn">data-color-needle-circle-outer</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-size</span><span class="pun">=</span><span class="atv">"15"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-outer</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-animation-rule</span><span class="pun">=</span><span class="atv">"linear"</span><span class="pln">
+    </span><span class="atn">data-needle-type</span><span class="pun">=</span><span class="atv">"line"</span><span class="pln">
+    </span><span class="atn">data-needle-start</span><span class="pun">=</span><span class="atv">"75"</span><span class="pln">
+    </span><span class="atn">data-needle-end</span><span class="pun">=</span><span class="atv">"99"</span><span class="pln">
+    </span><span class="atn">data-needle-width</span><span class="pun">=</span><span class="atv">"3"</span><span class="pln">
+    </span><span class="atn">data-borders</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-border-inner-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-border-middle-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-border-outer-width</span><span class="pun">=</span><span class="atv">"10"</span><span class="pln">
+    </span><span class="atn">data-color-border-outer</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-color-border-outer-end</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-color-needle-shadow-down</span><span class="pun">=</span><span class="atv">"#222"</span><span class="pln">
+    </span><span class="atn">data-border-shadow-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-animation-duration</span><span class="pun">=</span><span class="atv">"1500"</span><span class="pln">
+</span><span class="tag">&gt;&lt;/canvas&gt;</span></pre>                        <pre class="tab-js-content prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> gauge </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RadialGauge</span><span class="pun">({</span><span class="pln">
+    renderTo</span><span class="pun">:</span><span class="pln"> </span><span class="str">'canvas-id'</span><span class="pun">,</span><span class="pln">
+    minValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    maxValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">360</span><span class="pun">,</span><span class="pln">
+    majorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="str">"N"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"NE"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"E"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"SE"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"S"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"SW"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"W"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"NW"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"N"</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    minorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="lit">22</span><span class="pun">,</span><span class="pln">
+    ticksAngle</span><span class="pun">:</span><span class="pln"> </span><span class="lit">360</span><span class="pun">,</span><span class="pln">
+    startAngle</span><span class="pun">:</span><span class="pln"> </span><span class="lit">180</span><span class="pun">,</span><span class="pln">
+    strokeTicks</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    highlights</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    colorPlate</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#222"</span><span class="pun">,</span><span class="pln">
+    colorMajorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#f5f5f5"</span><span class="pun">,</span><span class="pln">
+    colorMinorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ddd"</span><span class="pun">,</span><span class="pln">
+    colorNumbers</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    colorNeedle</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(240, 128, 128, 1)"</span><span class="pun">,</span><span class="pln">
+    colorNeedleEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(255, 160, 122, .9)"</span><span class="pun">,</span><span class="pln">
+    valueBox</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    valueTextShadow</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    colorCircleInner</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#fff"</span><span class="pun">,</span><span class="pln">
+    colorNeedleCircleOuter</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    needleCircleSize</span><span class="pun">:</span><span class="pln"> </span><span class="lit">15</span><span class="pun">,</span><span class="pln">
+    needleCircleOuter</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    animationRule</span><span class="pun">:</span><span class="pln"> </span><span class="str">"linear"</span><span class="pun">,</span><span class="pln">
+    needleType</span><span class="pun">:</span><span class="pln"> </span><span class="str">"line"</span><span class="pun">,</span><span class="pln">
+    needleStart</span><span class="pun">:</span><span class="pln"> </span><span class="lit">75</span><span class="pun">,</span><span class="pln">
+    needleEnd</span><span class="pun">:</span><span class="pln"> </span><span class="lit">99</span><span class="pun">,</span><span class="pln">
+    needleWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln">
+    borders</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    borderInnerWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    borderMiddleWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    borderOuterWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+    colorBorderOuter</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    colorBorderOuterEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    colorNeedleShadowDown</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#222"</span><span class="pun">,</span><span class="pln">
+    borderShadowWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    animationDuration</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1500</span><span class="pln">
+</span><span class="pun">}).</span><span class="pln">draw</span><span class="pun">();</span></pre>                    </div>                </div><div id="tabs-container4" class="tabs-container" style="display: none;">                    <input id="tab-html4" type="radio" class="tab-html" name="tab-group">                    <label for="tab-html4">HTML</label>                    <input id="tab-js4" type="radio" class="tab-js" name="tab-group">                    <label for="tab-js4">JS</label>                    <span class="icon-circle-with-cross"></span>                    <div class="tabs-content">                        <pre class="tab-html-content prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;canvas</span><span class="pln"> </span><span class="atn">data-type</span><span class="pun">=</span><span class="atv">"radial-gauge"</span><span class="pln">
+    </span><span class="atn">data-min-value</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-max-value</span><span class="pun">=</span><span class="atv">"360"</span><span class="pln">
+    </span><span class="atn">data-major-ticks</span><span class="pun">=</span><span class="atv">"N,NE,E,SE,S,SW,W,NW,N"</span><span class="pln">
+    </span><span class="atn">data-minor-ticks</span><span class="pun">=</span><span class="atv">"22"</span><span class="pln">
+    </span><span class="atn">data-ticks-angle</span><span class="pun">=</span><span class="atv">"360"</span><span class="pln">
+    </span><span class="atn">data-start-angle</span><span class="pun">=</span><span class="atv">"180"</span><span class="pln">
+    </span><span class="atn">data-stroke-ticks</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-highlights</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-color-plate</span><span class="pun">=</span><span class="atv">"#a33"</span><span class="pln">
+    </span><span class="atn">data-color-major-ticks</span><span class="pun">=</span><span class="atv">"#f5f5f5"</span><span class="pln">
+    </span><span class="atn">data-color-minor-ticks</span><span class="pun">=</span><span class="atv">"#ddd"</span><span class="pln">
+    </span><span class="atn">data-color-numbers</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-color-needle</span><span class="pun">=</span><span class="atv">"rgba(240, 128, 128, 1)"</span><span class="pln">
+    </span><span class="atn">data-color-needle-end</span><span class="pun">=</span><span class="atv">"rgba(255, 160, 122, .9)"</span><span class="pln">
+    </span><span class="atn">data-value-box</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-value-text-shadow</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-color-circle-inner</span><span class="pun">=</span><span class="atv">"#fff"</span><span class="pln">
+    </span><span class="atn">data-color-needle-circle-outer</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-size</span><span class="pun">=</span><span class="atv">"15"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-outer</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-animation-rule</span><span class="pun">=</span><span class="atv">"linear"</span><span class="pln">
+    </span><span class="atn">data-needle-type</span><span class="pun">=</span><span class="atv">"line"</span><span class="pln">
+    </span><span class="atn">data-needle-start</span><span class="pun">=</span><span class="atv">"75"</span><span class="pln">
+    </span><span class="atn">data-needle-end</span><span class="pun">=</span><span class="atv">"99"</span><span class="pln">
+    </span><span class="atn">data-needle-width</span><span class="pun">=</span><span class="atv">"3"</span><span class="pln">
+    </span><span class="atn">data-borders</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-border-inner-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-border-middle-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-border-outer-width</span><span class="pun">=</span><span class="atv">"10"</span><span class="pln">
+    </span><span class="atn">data-color-border-outer</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-color-border-outer-end</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-color-needle-shadow-down</span><span class="pun">=</span><span class="atv">"#222"</span><span class="pln">
+    </span><span class="atn">data-border-shadow-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-animation-target</span><span class="pun">=</span><span class="atv">"plate"</span><span class="pln">
+    </span><span class="atn">data-animation-duration</span><span class="pun">=</span><span class="atv">"1500"</span><span class="pln">
+    </span><span class="atn">data-value</span><span class="pun">=</span><span class="atv">"45.5"</span><span class="pln">
+    </span><span class="atn">data-animate-on-init</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+</span><span class="tag">&gt;&lt;/canvas&gt;</span></pre>                        <pre class="tab-js-content prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> gauge </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RadialGauge</span><span class="pun">({</span><span class="pln">
+    renderTo</span><span class="pun">:</span><span class="pln"> </span><span class="str">'canvas-id'</span><span class="pun">,</span><span class="pln">
+    minValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    maxValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">360</span><span class="pun">,</span><span class="pln">
+    majorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="str">"N"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"NE"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"E"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"SE"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"S"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"SW"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"W"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"NW"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"N"</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    minorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="lit">22</span><span class="pun">,</span><span class="pln">
+    ticksAngle</span><span class="pun">:</span><span class="pln"> </span><span class="lit">360</span><span class="pun">,</span><span class="pln">
+    startAngle</span><span class="pun">:</span><span class="pln"> </span><span class="lit">180</span><span class="pun">,</span><span class="pln">
+    strokeTicks</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    highlights</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    colorPlate</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#a33"</span><span class="pun">,</span><span class="pln">
+    colorMajorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#f5f5f5"</span><span class="pun">,</span><span class="pln">
+    colorMinorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ddd"</span><span class="pun">,</span><span class="pln">
+    colorNumbers</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    colorNeedle</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(240, 128, 128, 1)"</span><span class="pun">,</span><span class="pln">
+    colorNeedleEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(255, 160, 122, .9)"</span><span class="pun">,</span><span class="pln">
+    valueBox</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    valueTextShadow</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    colorCircleInner</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#fff"</span><span class="pun">,</span><span class="pln">
+    colorNeedleCircleOuter</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    needleCircleSize</span><span class="pun">:</span><span class="pln"> </span><span class="lit">15</span><span class="pun">,</span><span class="pln">
+    needleCircleOuter</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    animationRule</span><span class="pun">:</span><span class="pln"> </span><span class="str">"linear"</span><span class="pun">,</span><span class="pln">
+    needleType</span><span class="pun">:</span><span class="pln"> </span><span class="str">"line"</span><span class="pun">,</span><span class="pln">
+    needleStart</span><span class="pun">:</span><span class="pln"> </span><span class="lit">75</span><span class="pun">,</span><span class="pln">
+    needleEnd</span><span class="pun">:</span><span class="pln"> </span><span class="lit">99</span><span class="pun">,</span><span class="pln">
+    needleWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln">
+    borders</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    borderInnerWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    borderMiddleWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    borderOuterWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+    colorBorderOuter</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    colorBorderOuterEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    colorNeedleShadowDown</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#222"</span><span class="pun">,</span><span class="pln">
+    borderShadowWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    animationTarget</span><span class="pun">:</span><span class="pln"> </span><span class="str">"plate"</span><span class="pun">,</span><span class="pln">
+    animationDuration</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1500</span><span class="pun">,</span><span class="pln">
+    value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">45.5</span><span class="pun">,</span><span class="pln">
+    animateOnInit</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pln">
+</span><span class="pun">}).</span><span class="pln">draw</span><span class="pun">();</span></pre>                    </div>                </div><div id="tabs-container5" class="tabs-container" style="display: none;">                    <input id="tab-html5" type="radio" class="tab-html" name="tab-group">                    <label for="tab-html5">HTML</label>                    <input id="tab-js5" type="radio" class="tab-js" name="tab-group">                    <label for="tab-js5">JS</label>                    <span class="icon-circle-with-cross"></span>                    <div class="tabs-content">                        <pre class="tab-html-content prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;canvas</span><span class="pln"> </span><span class="atn">data-type</span><span class="pun">=</span><span class="atv">"radial-gauge"</span><span class="pln">
+    </span><span class="atn">data-min-value</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-max-value</span><span class="pun">=</span><span class="atv">"360"</span><span class="pln">
+    </span><span class="atn">data-major-ticks</span><span class="pun">=</span><span class="atv">"N,NE,E,SE,S,SW,W,NW,N"</span><span class="pln">
+    </span><span class="atn">data-minor-ticks</span><span class="pun">=</span><span class="atv">"22"</span><span class="pln">
+    </span><span class="atn">data-ticks-angle</span><span class="pun">=</span><span class="atv">"360"</span><span class="pln">
+    </span><span class="atn">data-start-angle</span><span class="pun">=</span><span class="atv">"180"</span><span class="pln">
+    </span><span class="atn">data-stroke-ticks</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-highlights</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-color-plate</span><span class="pun">=</span><span class="atv">"#3a3"</span><span class="pln">
+    </span><span class="atn">data-color-major-ticks</span><span class="pun">=</span><span class="atv">"#f5f5f5"</span><span class="pln">
+    </span><span class="atn">data-color-minor-ticks</span><span class="pun">=</span><span class="atv">"#ddd"</span><span class="pln">
+    </span><span class="atn">data-color-numbers</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-color-needle</span><span class="pun">=</span><span class="atv">"rgba(240, 128, 128, 1)"</span><span class="pln">
+    </span><span class="atn">data-color-needle-end</span><span class="pun">=</span><span class="atv">"rgba(255, 160, 122, .9)"</span><span class="pln">
+    </span><span class="atn">data-value-box</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-value-text-shadow</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-color-circle-inner</span><span class="pun">=</span><span class="atv">"#fff"</span><span class="pln">
+    </span><span class="atn">data-color-needle-circle-outer</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-size</span><span class="pun">=</span><span class="atv">"15"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-outer</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-animation-rule</span><span class="pun">=</span><span class="atv">"linear"</span><span class="pln">
+    </span><span class="atn">data-needle-type</span><span class="pun">=</span><span class="atv">"line"</span><span class="pln">
+    </span><span class="atn">data-needle-start</span><span class="pun">=</span><span class="atv">"75"</span><span class="pln">
+    </span><span class="atn">data-needle-end</span><span class="pun">=</span><span class="atv">"99"</span><span class="pln">
+    </span><span class="atn">data-needle-width</span><span class="pun">=</span><span class="atv">"3"</span><span class="pln">
+    </span><span class="atn">data-borders</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-border-inner-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-border-middle-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-border-outer-width</span><span class="pun">=</span><span class="atv">"10"</span><span class="pln">
+    </span><span class="atn">data-color-border-outer</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-color-border-outer-end</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-color-needle-shadow-down</span><span class="pun">=</span><span class="atv">"#222"</span><span class="pln">
+    </span><span class="atn">data-border-shadow-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-animation-duration</span><span class="pun">=</span><span class="atv">"1500"</span><span class="pln">
+</span><span class="tag">&gt;&lt;/canvas&gt;</span></pre>                        <pre class="tab-js-content prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> gauge </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RadialGauge</span><span class="pun">({</span><span class="pln">
+    renderTo</span><span class="pun">:</span><span class="pln"> </span><span class="str">'canvas-id'</span><span class="pun">,</span><span class="pln">
+    minValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    maxValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">360</span><span class="pun">,</span><span class="pln">
+    majorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="str">"N"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"NE"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"E"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"SE"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"S"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"SW"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"W"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"NW"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"N"</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    minorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="lit">22</span><span class="pun">,</span><span class="pln">
+    ticksAngle</span><span class="pun">:</span><span class="pln"> </span><span class="lit">360</span><span class="pun">,</span><span class="pln">
+    startAngle</span><span class="pun">:</span><span class="pln"> </span><span class="lit">180</span><span class="pun">,</span><span class="pln">
+    strokeTicks</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    highlights</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    colorPlate</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#3a3"</span><span class="pun">,</span><span class="pln">
+    colorMajorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#f5f5f5"</span><span class="pun">,</span><span class="pln">
+    colorMinorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ddd"</span><span class="pun">,</span><span class="pln">
+    colorNumbers</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    colorNeedle</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(240, 128, 128, 1)"</span><span class="pun">,</span><span class="pln">
+    colorNeedleEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(255, 160, 122, .9)"</span><span class="pun">,</span><span class="pln">
+    valueBox</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    valueTextShadow</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    colorCircleInner</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#fff"</span><span class="pun">,</span><span class="pln">
+    colorNeedleCircleOuter</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    needleCircleSize</span><span class="pun">:</span><span class="pln"> </span><span class="lit">15</span><span class="pun">,</span><span class="pln">
+    needleCircleOuter</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    animationRule</span><span class="pun">:</span><span class="pln"> </span><span class="str">"linear"</span><span class="pun">,</span><span class="pln">
+    needleType</span><span class="pun">:</span><span class="pln"> </span><span class="str">"line"</span><span class="pun">,</span><span class="pln">
+    needleStart</span><span class="pun">:</span><span class="pln"> </span><span class="lit">75</span><span class="pun">,</span><span class="pln">
+    needleEnd</span><span class="pun">:</span><span class="pln"> </span><span class="lit">99</span><span class="pun">,</span><span class="pln">
+    needleWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln">
+    borders</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    borderInnerWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    borderMiddleWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    borderOuterWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+    colorBorderOuter</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    colorBorderOuterEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    colorNeedleShadowDown</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#222"</span><span class="pun">,</span><span class="pln">
+    borderShadowWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    animationDuration</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1500</span><span class="pln">
+</span><span class="pun">}).</span><span class="pln">draw</span><span class="pun">();</span></pre>                    </div>                </div><div id="tabs-container6" class="tabs-container" style="display: none;">                    <input id="tab-html6" type="radio" class="tab-html" name="tab-group">                    <label for="tab-html6">HTML</label>                    <input id="tab-js6" type="radio" class="tab-js" name="tab-group">                    <label for="tab-js6">JS</label>                    <span class="icon-circle-with-cross"></span>                    <div class="tabs-content">                        <pre class="tab-html-content prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;canvas</span><span class="pln"> </span><span class="atn">data-type</span><span class="pun">=</span><span class="atv">"radial-gauge"</span><span class="pln">
+    </span><span class="atn">data-min-value</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-max-value</span><span class="pun">=</span><span class="atv">"360"</span><span class="pln">
+    </span><span class="atn">data-major-ticks</span><span class="pun">=</span><span class="atv">"N,NE,E,SE,S,SW,W,NW,N"</span><span class="pln">
+    </span><span class="atn">data-minor-ticks</span><span class="pun">=</span><span class="atv">"22"</span><span class="pln">
+    </span><span class="atn">data-ticks-angle</span><span class="pun">=</span><span class="atv">"360"</span><span class="pln">
+    </span><span class="atn">data-start-angle</span><span class="pun">=</span><span class="atv">"180"</span><span class="pln">
+    </span><span class="atn">data-stroke-ticks</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-highlights</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-color-plate</span><span class="pun">=</span><span class="atv">"#33a"</span><span class="pln">
+    </span><span class="atn">data-color-major-ticks</span><span class="pun">=</span><span class="atv">"#f5f5f5"</span><span class="pln">
+    </span><span class="atn">data-color-minor-ticks</span><span class="pun">=</span><span class="atv">"#ddd"</span><span class="pln">
+    </span><span class="atn">data-color-numbers</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-color-needle</span><span class="pun">=</span><span class="atv">"rgba(240, 128, 128, 1)"</span><span class="pln">
+    </span><span class="atn">data-color-needle-end</span><span class="pun">=</span><span class="atv">"rgba(255, 160, 122, .9)"</span><span class="pln">
+    </span><span class="atn">data-value-box</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-value-text-shadow</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-color-circle-inner</span><span class="pun">=</span><span class="atv">"#fff"</span><span class="pln">
+    </span><span class="atn">data-color-needle-circle-outer</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-size</span><span class="pun">=</span><span class="atv">"15"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-outer</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-animation-rule</span><span class="pun">=</span><span class="atv">"linear"</span><span class="pln">
+    </span><span class="atn">data-needle-type</span><span class="pun">=</span><span class="atv">"line"</span><span class="pln">
+    </span><span class="atn">data-needle-start</span><span class="pun">=</span><span class="atv">"75"</span><span class="pln">
+    </span><span class="atn">data-needle-end</span><span class="pun">=</span><span class="atv">"99"</span><span class="pln">
+    </span><span class="atn">data-needle-width</span><span class="pun">=</span><span class="atv">"3"</span><span class="pln">
+    </span><span class="atn">data-borders</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-border-inner-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-border-middle-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-border-outer-width</span><span class="pun">=</span><span class="atv">"10"</span><span class="pln">
+    </span><span class="atn">data-color-border-outer</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-color-border-outer-end</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-color-needle-shadow-down</span><span class="pun">=</span><span class="atv">"#222"</span><span class="pln">
+    </span><span class="atn">data-border-shadow-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-animation-target</span><span class="pun">=</span><span class="atv">"plate"</span><span class="pln">
+    </span><span class="atn">data-units</span><span class="pun">=</span><span class="atv">"ᵍ"</span><span class="pln">
+    </span><span class="atn">data-title</span><span class="pun">=</span><span class="atv">"DIRECTION"</span><span class="pln">
+    </span><span class="atn">data-font-title-size</span><span class="pun">=</span><span class="atv">"19"</span><span class="pln">
+    </span><span class="atn">data-color-title</span><span class="pun">=</span><span class="atv">"#f5f5f5"</span><span class="pln">
+    </span><span class="atn">data-animation-duration</span><span class="pun">=</span><span class="atv">"1500"</span><span class="pln">
+</span><span class="tag">&gt;&lt;/canvas&gt;</span></pre>                        <pre class="tab-js-content prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> gauge </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RadialGauge</span><span class="pun">({</span><span class="pln">
+    renderTo</span><span class="pun">:</span><span class="pln"> </span><span class="str">'canvas-id'</span><span class="pun">,</span><span class="pln">
+    minValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    maxValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">360</span><span class="pun">,</span><span class="pln">
+    majorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="str">"N"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"NE"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"E"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"SE"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"S"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"SW"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"W"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"NW"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"N"</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    minorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="lit">22</span><span class="pun">,</span><span class="pln">
+    ticksAngle</span><span class="pun">:</span><span class="pln"> </span><span class="lit">360</span><span class="pun">,</span><span class="pln">
+    startAngle</span><span class="pun">:</span><span class="pln"> </span><span class="lit">180</span><span class="pun">,</span><span class="pln">
+    strokeTicks</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    highlights</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    colorPlate</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#33a"</span><span class="pun">,</span><span class="pln">
+    colorMajorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#f5f5f5"</span><span class="pun">,</span><span class="pln">
+    colorMinorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ddd"</span><span class="pun">,</span><span class="pln">
+    colorNumbers</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    colorNeedle</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(240, 128, 128, 1)"</span><span class="pun">,</span><span class="pln">
+    colorNeedleEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(255, 160, 122, .9)"</span><span class="pun">,</span><span class="pln">
+    valueBox</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    valueTextShadow</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    colorCircleInner</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#fff"</span><span class="pun">,</span><span class="pln">
+    colorNeedleCircleOuter</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    needleCircleSize</span><span class="pun">:</span><span class="pln"> </span><span class="lit">15</span><span class="pun">,</span><span class="pln">
+    needleCircleOuter</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    animationRule</span><span class="pun">:</span><span class="pln"> </span><span class="str">"linear"</span><span class="pun">,</span><span class="pln">
+    needleType</span><span class="pun">:</span><span class="pln"> </span><span class="str">"line"</span><span class="pun">,</span><span class="pln">
+    needleStart</span><span class="pun">:</span><span class="pln"> </span><span class="lit">75</span><span class="pun">,</span><span class="pln">
+    needleEnd</span><span class="pun">:</span><span class="pln"> </span><span class="lit">99</span><span class="pun">,</span><span class="pln">
+    needleWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln">
+    borders</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    borderInnerWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    borderMiddleWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    borderOuterWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+    colorBorderOuter</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    colorBorderOuterEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    colorNeedleShadowDown</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#222"</span><span class="pun">,</span><span class="pln">
+    borderShadowWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    animationTarget</span><span class="pun">:</span><span class="pln"> </span><span class="str">"plate"</span><span class="pun">,</span><span class="pln">
+    units</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ᵍ"</span><span class="pun">,</span><span class="pln">
+    title</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DIRECTION"</span><span class="pun">,</span><span class="pln">
+    fontTitleSize</span><span class="pun">:</span><span class="pln"> </span><span class="lit">19</span><span class="pun">,</span><span class="pln">
+    colorTitle</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#f5f5f5"</span><span class="pun">,</span><span class="pln">
+    animationDuration</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1500</span><span class="pln">
+</span><span class="pun">}).</span><span class="pln">draw</span><span class="pun">();</span></pre>                    </div>                </div><div id="tabs-container7" class="tabs-container" style="display: none;">                    <input id="tab-html7" type="radio" class="tab-html" name="tab-group">                    <label for="tab-html7">HTML</label>                    <input id="tab-js7" type="radio" class="tab-js" name="tab-group">                    <label for="tab-js7">JS</label>                    <span class="icon-circle-with-cross"></span>                    <div class="tabs-content">                        <pre class="tab-html-content prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;canvas</span><span class="pln"> </span><span class="atn">data-type</span><span class="pun">=</span><span class="atv">"radial-gauge"</span><span class="pln">
+    </span><span class="atn">data-width</span><span class="pun">=</span><span class="atv">"300"</span><span class="pln">
+    </span><span class="atn">data-height</span><span class="pun">=</span><span class="atv">"300"</span><span class="pln">
+    </span><span class="atn">data-units</span><span class="pun">=</span><span class="atv">"Km/h"</span><span class="pln">
+    </span><span class="atn">data-min-value</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-max-value</span><span class="pun">=</span><span class="atv">"220"</span><span class="pln">
+    </span><span class="atn">data-major-ticks</span><span class="pun">=</span><span class="atv">"0,20,40,60,80,100,120,140,160,180,200,220"</span><span class="pln">
+    </span><span class="atn">data-minor-ticks</span><span class="pun">=</span><span class="atv">"2"</span><span class="pln">
+    </span><span class="atn">data-stroke-ticks</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-highlights</span><span class="pun">=</span><span class="atv">'[
+        {"from": 160, "to": 220, "color": "rgba(200, 50, 50, .75)"}
+    ]'</span><span class="pln">
+    </span><span class="atn">data-color-plate</span><span class="pun">=</span><span class="atv">"#fff"</span><span class="pln">
+    </span><span class="atn">data-border-shadow-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-borders</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-needle-type</span><span class="pun">=</span><span class="atv">"arrow"</span><span class="pln">
+    </span><span class="atn">data-needle-width</span><span class="pun">=</span><span class="atv">"2"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-size</span><span class="pun">=</span><span class="atv">"7"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-outer</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-inner</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-animation-duration</span><span class="pun">=</span><span class="atv">"1500"</span><span class="pln">
+    </span><span class="atn">data-animation-rule</span><span class="pun">=</span><span class="atv">"linear"</span><span class="pln">
+</span><span class="tag">&gt;&lt;/canvas&gt;</span></pre>                        <pre class="tab-js-content prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> gauge </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RadialGauge</span><span class="pun">({</span><span class="pln">
+    renderTo</span><span class="pun">:</span><span class="pln"> </span><span class="str">'canvas-id'</span><span class="pun">,</span><span class="pln">
+    width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">300</span><span class="pun">,</span><span class="pln">
+    height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">300</span><span class="pun">,</span><span class="pln">
+    units</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Km/h"</span><span class="pun">,</span><span class="pln">
+    minValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    maxValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">220</span><span class="pun">,</span><span class="pln">
+    majorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="str">"0"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"20"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"40"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"60"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"80"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"100"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"120"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"140"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"160"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"180"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"200"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"220"</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    minorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+    strokeTicks</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    highlights</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"from"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">160</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"to"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">220</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"color"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(200, 50, 50, .75)"</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    colorPlate</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#fff"</span><span class="pun">,</span><span class="pln">
+    borderShadowWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    borders</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    needleType</span><span class="pun">:</span><span class="pln"> </span><span class="str">"arrow"</span><span class="pun">,</span><span class="pln">
+    needleWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+    needleCircleSize</span><span class="pun">:</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln">
+    needleCircleOuter</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    needleCircleInner</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    animationDuration</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1500</span><span class="pun">,</span><span class="pln">
+    animationRule</span><span class="pun">:</span><span class="pln"> </span><span class="str">"linear"</span><span class="pln">
+</span><span class="pun">}).</span><span class="pln">draw</span><span class="pun">();</span></pre>                    </div>                </div><div id="tabs-container8" class="tabs-container" style="display: none;">                    <input id="tab-html8" type="radio" class="tab-html" name="tab-group">                    <label for="tab-html8">HTML</label>                    <input id="tab-js8" type="radio" class="tab-js" name="tab-group">                    <label for="tab-js8">JS</label>                    <span class="icon-circle-with-cross"></span>                    <div class="tabs-content">                        <pre class="tab-html-content prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;canvas</span><span class="pln"> </span><span class="atn">data-type</span><span class="pun">=</span><span class="atv">"radial-gauge"</span><span class="pln">
+    </span><span class="atn">data-width</span><span class="pun">=</span><span class="atv">"300"</span><span class="pln">
+    </span><span class="atn">data-height</span><span class="pun">=</span><span class="atv">"300"</span><span class="pln">
+    </span><span class="atn">data-units</span><span class="pun">=</span><span class="atv">"Km/h"</span><span class="pln">
+    </span><span class="atn">data-min-value</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-start-angle</span><span class="pun">=</span><span class="atv">"90"</span><span class="pln">
+    </span><span class="atn">data-ticks-angle</span><span class="pun">=</span><span class="atv">"180"</span><span class="pln">
+    </span><span class="atn">data-value-box</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-max-value</span><span class="pun">=</span><span class="atv">"220"</span><span class="pln">
+    </span><span class="atn">data-major-ticks</span><span class="pun">=</span><span class="atv">"0,20,40,60,80,100,120,140,160,180,200,220"</span><span class="pln">
+    </span><span class="atn">data-minor-ticks</span><span class="pun">=</span><span class="atv">"2"</span><span class="pln">
+    </span><span class="atn">data-stroke-ticks</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-highlights</span><span class="pun">=</span><span class="atv">'[
+        {"from": 160, "to": 220, "color": "rgba(200, 50, 50, .75)"}
+    ]'</span><span class="pln">
+    </span><span class="atn">data-color-plate</span><span class="pun">=</span><span class="atv">"#fff"</span><span class="pln">
+    </span><span class="atn">data-border-shadow-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-borders</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-needle-type</span><span class="pun">=</span><span class="atv">"arrow"</span><span class="pln">
+    </span><span class="atn">data-needle-width</span><span class="pun">=</span><span class="atv">"2"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-size</span><span class="pun">=</span><span class="atv">"7"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-outer</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-inner</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-animation-duration</span><span class="pun">=</span><span class="atv">"1500"</span><span class="pln">
+    </span><span class="atn">data-animation-rule</span><span class="pun">=</span><span class="atv">"linear"</span><span class="pln">
+</span><span class="tag">&gt;&lt;/canvas&gt;</span></pre>                        <pre class="tab-js-content prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> gauge </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RadialGauge</span><span class="pun">({</span><span class="pln">
+    renderTo</span><span class="pun">:</span><span class="pln"> </span><span class="str">'canvas-id'</span><span class="pun">,</span><span class="pln">
+    width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">300</span><span class="pun">,</span><span class="pln">
+    height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">300</span><span class="pun">,</span><span class="pln">
+    units</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Km/h"</span><span class="pun">,</span><span class="pln">
+    minValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    startAngle</span><span class="pun">:</span><span class="pln"> </span><span class="lit">90</span><span class="pun">,</span><span class="pln">
+    ticksAngle</span><span class="pun">:</span><span class="pln"> </span><span class="lit">180</span><span class="pun">,</span><span class="pln">
+    valueBox</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    maxValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">220</span><span class="pun">,</span><span class="pln">
+    majorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="str">"0"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"20"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"40"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"60"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"80"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"100"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"120"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"140"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"160"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"180"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"200"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"220"</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    minorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+    strokeTicks</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    highlights</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"from"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">160</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"to"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">220</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"color"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(200, 50, 50, .75)"</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    colorPlate</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#fff"</span><span class="pun">,</span><span class="pln">
+    borderShadowWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    borders</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    needleType</span><span class="pun">:</span><span class="pln"> </span><span class="str">"arrow"</span><span class="pun">,</span><span class="pln">
+    needleWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+    needleCircleSize</span><span class="pun">:</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln">
+    needleCircleOuter</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    needleCircleInner</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    animationDuration</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1500</span><span class="pun">,</span><span class="pln">
+    animationRule</span><span class="pun">:</span><span class="pln"> </span><span class="str">"linear"</span><span class="pln">
+</span><span class="pun">}).</span><span class="pln">draw</span><span class="pun">();</span></pre>                    </div>                </div><div id="tabs-container9" class="tabs-container" style="display: none;">                    <input id="tab-html9" type="radio" class="tab-html" name="tab-group">                    <label for="tab-html9">HTML</label>                    <input id="tab-js9" type="radio" class="tab-js" name="tab-group">                    <label for="tab-js9">JS</label>                    <span class="icon-circle-with-cross"></span>                    <div class="tabs-content">                        <pre class="tab-html-content prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;canvas</span><span class="pln"> </span><span class="atn">data-type</span><span class="pun">=</span><span class="atv">"radial-gauge"</span><span class="pln">
+    </span><span class="atn">data-width</span><span class="pun">=</span><span class="atv">"300"</span><span class="pln">
+    </span><span class="atn">data-height</span><span class="pun">=</span><span class="atv">"300"</span><span class="pln">
+    </span><span class="atn">data-units</span><span class="pun">=</span><span class="atv">"Km/h"</span><span class="pln">
+    </span><span class="atn">data-min-value</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-start-angle</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-ticks-angle</span><span class="pun">=</span><span class="atv">"180"</span><span class="pln">
+    </span><span class="atn">data-value-box</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-max-value</span><span class="pun">=</span><span class="atv">"220"</span><span class="pln">
+    </span><span class="atn">data-major-ticks</span><span class="pun">=</span><span class="atv">"0,20,40,60,80,100,120,140,160,180,200,220"</span><span class="pln">
+    </span><span class="atn">data-minor-ticks</span><span class="pun">=</span><span class="atv">"2"</span><span class="pln">
+    </span><span class="atn">data-stroke-ticks</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-highlights</span><span class="pun">=</span><span class="atv">'[
+        {"from": 160, "to": 220, "color": "rgba(200, 50, 50, .75)"}
+    ]'</span><span class="pln">
+    </span><span class="atn">data-color-plate</span><span class="pun">=</span><span class="atv">"#fff"</span><span class="pln">
+    </span><span class="atn">data-border-shadow-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-borders</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-needle-type</span><span class="pun">=</span><span class="atv">"arrow"</span><span class="pln">
+    </span><span class="atn">data-needle-width</span><span class="pun">=</span><span class="atv">"2"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-size</span><span class="pun">=</span><span class="atv">"7"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-outer</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-inner</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-animation-duration</span><span class="pun">=</span><span class="atv">"1500"</span><span class="pln">
+    </span><span class="atn">data-animation-rule</span><span class="pun">=</span><span class="atv">"linear"</span><span class="pln">
+    </span><span class="atn">data-animation-target</span><span class="pun">=</span><span class="atv">"plate"</span><span class="pln">
+</span><span class="tag">&gt;&lt;/canvas&gt;</span></pre>                        <pre class="tab-js-content prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> gauge </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RadialGauge</span><span class="pun">({</span><span class="pln">
+    renderTo</span><span class="pun">:</span><span class="pln"> </span><span class="str">'canvas-id'</span><span class="pun">,</span><span class="pln">
+    width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">300</span><span class="pun">,</span><span class="pln">
+    height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">300</span><span class="pun">,</span><span class="pln">
+    units</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Km/h"</span><span class="pun">,</span><span class="pln">
+    minValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    startAngle</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    ticksAngle</span><span class="pun">:</span><span class="pln"> </span><span class="lit">180</span><span class="pun">,</span><span class="pln">
+    valueBox</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    maxValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">220</span><span class="pun">,</span><span class="pln">
+    majorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="str">"0"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"20"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"40"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"60"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"80"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"100"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"120"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"140"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"160"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"180"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"200"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"220"</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    minorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+    strokeTicks</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    highlights</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"from"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">160</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"to"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">220</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"color"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(200, 50, 50, .75)"</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    colorPlate</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#fff"</span><span class="pun">,</span><span class="pln">
+    borderShadowWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    borders</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    needleType</span><span class="pun">:</span><span class="pln"> </span><span class="str">"arrow"</span><span class="pun">,</span><span class="pln">
+    needleWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+    needleCircleSize</span><span class="pun">:</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln">
+    needleCircleOuter</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    needleCircleInner</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    animationDuration</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1500</span><span class="pun">,</span><span class="pln">
+    animationRule</span><span class="pun">:</span><span class="pln"> </span><span class="str">"linear"</span><span class="pun">,</span><span class="pln">
+    animationTarget</span><span class="pun">:</span><span class="pln"> </span><span class="str">"plate"</span><span class="pln">
+</span><span class="pun">}).</span><span class="pln">draw</span><span class="pun">();</span></pre>                    </div>                </div><div id="tabs-container10" class="tabs-container" style="display: none;">                    <input id="tab-html10" type="radio" class="tab-html" name="tab-group">                    <label for="tab-html10">HTML</label>                    <input id="tab-js10" type="radio" class="tab-js" name="tab-group">                    <label for="tab-js10">JS</label>                    <span class="icon-circle-with-cross"></span>                    <div class="tabs-content">                        <pre class="tab-html-content prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;canvas</span><span class="pln"> </span><span class="atn">data-type</span><span class="pun">=</span><span class="atv">"radial-gauge"</span><span class="pln">
+    </span><span class="atn">data-width</span><span class="pun">=</span><span class="atv">"300"</span><span class="pln">
+    </span><span class="atn">data-height</span><span class="pun">=</span><span class="atv">"300"</span><span class="pln">
+    </span><span class="atn">data-units</span><span class="pun">=</span><span class="atv">"°C"</span><span class="pln">
+    </span><span class="atn">data-title</span><span class="pun">=</span><span class="atv">"Temperature"</span><span class="pln">
+    </span><span class="atn">data-min-value</span><span class="pun">=</span><span class="atv">"-50"</span><span class="pln">
+    </span><span class="atn">data-max-value</span><span class="pun">=</span><span class="atv">"50"</span><span class="pln">
+    </span><span class="atn">data-major-ticks</span><span class="pun">=</span><span class="atv">"[-50,-40,-30,-20,-10,0,10,20,30,40,50]"</span><span class="pln">
+    </span><span class="atn">data-minor-ticks</span><span class="pun">=</span><span class="atv">"2"</span><span class="pln">
+    </span><span class="atn">data-stroke-ticks</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-highlights</span><span class="pun">=</span><span class="atv">'[ {"from": -50, "to": 0, "color": "rgba(0,0, 255, .3)"},
+        {"from": 0, "to": 50, "color": "rgba(255, 0, 0, .3)"} ]'</span><span class="pln">
+    </span><span class="atn">data-ticks-angle</span><span class="pun">=</span><span class="atv">"225"</span><span class="pln">
+    </span><span class="atn">data-start-angle</span><span class="pun">=</span><span class="atv">"67.5"</span><span class="pln">
+    </span><span class="atn">data-color-major-ticks</span><span class="pun">=</span><span class="atv">"#ddd"</span><span class="pln">
+    </span><span class="atn">data-color-minor-ticks</span><span class="pun">=</span><span class="atv">"#ddd"</span><span class="pln">
+    </span><span class="atn">data-color-title</span><span class="pun">=</span><span class="atv">"#eee"</span><span class="pln">
+    </span><span class="atn">data-color-units</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-color-numbers</span><span class="pun">=</span><span class="atv">"#eee"</span><span class="pln">
+    </span><span class="atn">data-color-plate</span><span class="pun">=</span><span class="atv">"#222"</span><span class="pln">
+    </span><span class="atn">data-border-shadow-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-borders</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-needle-type</span><span class="pun">=</span><span class="atv">"arrow"</span><span class="pln">
+    </span><span class="atn">data-needle-width</span><span class="pun">=</span><span class="atv">"2"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-size</span><span class="pun">=</span><span class="atv">"7"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-outer</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-inner</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-animation-duration</span><span class="pun">=</span><span class="atv">"1500"</span><span class="pln">
+    </span><span class="atn">data-animation-rule</span><span class="pun">=</span><span class="atv">"linear"</span><span class="pln">
+    </span><span class="atn">data-color-border-outer</span><span class="pun">=</span><span class="atv">"#333"</span><span class="pln">
+    </span><span class="atn">data-color-border-outer-end</span><span class="pun">=</span><span class="atv">"#111"</span><span class="pln">
+    </span><span class="atn">data-color-border-middle</span><span class="pun">=</span><span class="atv">"#222"</span><span class="pln">
+    </span><span class="atn">data-color-border-middle-end</span><span class="pun">=</span><span class="atv">"#111"</span><span class="pln">
+    </span><span class="atn">data-color-border-inner</span><span class="pun">=</span><span class="atv">"#111"</span><span class="pln">
+    </span><span class="atn">data-color-border-inner-end</span><span class="pun">=</span><span class="atv">"#333"</span><span class="pln">
+    </span><span class="atn">data-color-needle-shadow-down</span><span class="pun">=</span><span class="atv">"#333"</span><span class="pln">
+    </span><span class="atn">data-color-needle-circle-outer</span><span class="pun">=</span><span class="atv">"#333"</span><span class="pln">
+    </span><span class="atn">data-color-needle-circle-outer-end</span><span class="pun">=</span><span class="atv">"#111"</span><span class="pln">
+    </span><span class="atn">data-color-needle-circle-inner</span><span class="pun">=</span><span class="atv">"#111"</span><span class="pln">
+    </span><span class="atn">data-color-needle-circle-inner-end</span><span class="pun">=</span><span class="atv">"#222"</span><span class="pln">
+    </span><span class="atn">data-value-box-border-radius</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-color-value-box-rect</span><span class="pun">=</span><span class="atv">"#222"</span><span class="pln">
+    </span><span class="atn">data-color-value-box-rect-end</span><span class="pun">=</span><span class="atv">"#333"</span><span class="pln">
+</span><span class="tag">&gt;&lt;/canvas&gt;</span></pre>                        <pre class="tab-js-content prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> gauge </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RadialGauge</span><span class="pun">({</span><span class="pln">
+    renderTo</span><span class="pun">:</span><span class="pln"> </span><span class="str">'canvas-id'</span><span class="pun">,</span><span class="pln">
+    width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">300</span><span class="pun">,</span><span class="pln">
+    height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">300</span><span class="pun">,</span><span class="pln">
+    units</span><span class="pun">:</span><span class="pln"> </span><span class="str">"°C"</span><span class="pun">,</span><span class="pln">
+    title</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Temperature"</span><span class="pun">,</span><span class="pln">
+    minValue</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="lit">50</span><span class="pun">,</span><span class="pln">
+    maxValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50</span><span class="pun">,</span><span class="pln">
+    majorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="pun">-</span><span class="lit">50</span><span class="pun">,</span><span class="pln">
+        </span><span class="pun">-</span><span class="lit">40</span><span class="pun">,</span><span class="pln">
+        </span><span class="pun">-</span><span class="lit">30</span><span class="pun">,</span><span class="pln">
+        </span><span class="pun">-</span><span class="lit">20</span><span class="pun">,</span><span class="pln">
+        </span><span class="pun">-</span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+        </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+        </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+        </span><span class="lit">20</span><span class="pun">,</span><span class="pln">
+        </span><span class="lit">30</span><span class="pun">,</span><span class="pln">
+        </span><span class="lit">40</span><span class="pun">,</span><span class="pln">
+        </span><span class="lit">50</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    minorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+    strokeTicks</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    highlights</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"from"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="lit">50</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"to"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"color"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(0,0, 255, .3)"</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"from"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"to"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"color"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(255, 0, 0, .3)"</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    ticksAngle</span><span class="pun">:</span><span class="pln"> </span><span class="lit">225</span><span class="pun">,</span><span class="pln">
+    startAngle</span><span class="pun">:</span><span class="pln"> </span><span class="lit">67.5</span><span class="pun">,</span><span class="pln">
+    colorMajorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ddd"</span><span class="pun">,</span><span class="pln">
+    colorMinorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ddd"</span><span class="pun">,</span><span class="pln">
+    colorTitle</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#eee"</span><span class="pun">,</span><span class="pln">
+    colorUnits</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    colorNumbers</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#eee"</span><span class="pun">,</span><span class="pln">
+    colorPlate</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#222"</span><span class="pun">,</span><span class="pln">
+    borderShadowWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    borders</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    needleType</span><span class="pun">:</span><span class="pln"> </span><span class="str">"arrow"</span><span class="pun">,</span><span class="pln">
+    needleWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+    needleCircleSize</span><span class="pun">:</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln">
+    needleCircleOuter</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    needleCircleInner</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    animationDuration</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1500</span><span class="pun">,</span><span class="pln">
+    animationRule</span><span class="pun">:</span><span class="pln"> </span><span class="str">"linear"</span><span class="pun">,</span><span class="pln">
+    colorBorderOuter</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#333"</span><span class="pun">,</span><span class="pln">
+    colorBorderOuterEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#111"</span><span class="pun">,</span><span class="pln">
+    colorBorderMiddle</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#222"</span><span class="pun">,</span><span class="pln">
+    colorBorderMiddleEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#111"</span><span class="pun">,</span><span class="pln">
+    colorBorderInner</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#111"</span><span class="pun">,</span><span class="pln">
+    colorBorderInnerEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#333"</span><span class="pun">,</span><span class="pln">
+    colorNeedleShadowDown</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#333"</span><span class="pun">,</span><span class="pln">
+    colorNeedleCircleOuter</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#333"</span><span class="pun">,</span><span class="pln">
+    colorNeedleCircleOuterEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#111"</span><span class="pun">,</span><span class="pln">
+    colorNeedleCircleInner</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#111"</span><span class="pun">,</span><span class="pln">
+    colorNeedleCircleInnerEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#222"</span><span class="pun">,</span><span class="pln">
+    valueBoxBorderRadius</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    colorValueBoxRect</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#222"</span><span class="pun">,</span><span class="pln">
+    colorValueBoxRectEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#333"</span><span class="pln">
+</span><span class="pun">}).</span><span class="pln">draw</span><span class="pun">();</span></pre>                    </div>                </div><div id="tabs-container11" class="tabs-container" style="display: none;">                    <input id="tab-html11" type="radio" class="tab-html" name="tab-group">                    <label for="tab-html11">HTML</label>                    <input id="tab-js11" type="radio" class="tab-js" name="tab-group">                    <label for="tab-js11">JS</label>                    <span class="icon-circle-with-cross"></span>                    <div class="tabs-content">                        <pre class="tab-html-content prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;canvas</span><span class="pln"> </span><span class="atn">data-type</span><span class="pun">=</span><span class="atv">"linear-gauge"</span><span class="pln">
+    </span><span class="atn">data-width</span><span class="pun">=</span><span class="atv">"120"</span><span class="pln">
+    </span><span class="atn">data-height</span><span class="pun">=</span><span class="atv">"400"</span><span class="pln">
+    </span><span class="atn">data-units</span><span class="pun">=</span><span class="atv">"°C"</span><span class="pln">
+    </span><span class="atn">data-min-value</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-max-value</span><span class="pun">=</span><span class="atv">"220"</span><span class="pln">
+    </span><span class="atn">data-major-ticks</span><span class="pun">=</span><span class="atv">"0,20,40,60,80,100,120,140,160,180,200,220"</span><span class="pln">
+    </span><span class="atn">data-minor-ticks</span><span class="pun">=</span><span class="atv">"2"</span><span class="pln">
+    </span><span class="atn">data-stroke-ticks</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-highlights</span><span class="pun">=</span><span class="atv">'[ {"from": 100, "to": 220, "color": "rgba(200, 50, 50, .75)"} ]'</span><span class="pln">
+    </span><span class="atn">data-color-plate</span><span class="pun">=</span><span class="atv">"#fff"</span><span class="pln">
+    </span><span class="atn">data-border-shadow-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-borders</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-needle-type</span><span class="pun">=</span><span class="atv">"arrow"</span><span class="pln">
+    </span><span class="atn">data-needle-width</span><span class="pun">=</span><span class="atv">"2"</span><span class="pln">
+    </span><span class="atn">data-animation-duration</span><span class="pun">=</span><span class="atv">"1500"</span><span class="pln">
+    </span><span class="atn">data-animation-rule</span><span class="pun">=</span><span class="atv">"linear"</span><span class="pln">
+    </span><span class="atn">data-tick-side</span><span class="pun">=</span><span class="atv">"left"</span><span class="pln">
+    </span><span class="atn">data-number-side</span><span class="pun">=</span><span class="atv">"left"</span><span class="pln">
+    </span><span class="atn">data-needle-side</span><span class="pun">=</span><span class="atv">"left"</span><span class="pln">
+    </span><span class="atn">data-bar-stroke-width</span><span class="pun">=</span><span class="atv">"7"</span><span class="pln">
+    </span><span class="atn">data-bar-begin-circle</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-value</span><span class="pun">=</span><span class="atv">"75"</span><span class="pln">
+</span><span class="tag">&gt;&lt;/canvas&gt;</span></pre>                        <pre class="tab-js-content prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> gauge </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">LinearGauge</span><span class="pun">({</span><span class="pln">
+    renderTo</span><span class="pun">:</span><span class="pln"> </span><span class="str">'canvas-id'</span><span class="pun">,</span><span class="pln">
+    width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">120</span><span class="pun">,</span><span class="pln">
+    height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">400</span><span class="pun">,</span><span class="pln">
+    units</span><span class="pun">:</span><span class="pln"> </span><span class="str">"°C"</span><span class="pun">,</span><span class="pln">
+    minValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    maxValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">220</span><span class="pun">,</span><span class="pln">
+    majorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="str">"0"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"20"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"40"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"60"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"80"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"100"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"120"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"140"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"160"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"180"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"200"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"220"</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    minorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+    strokeTicks</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    highlights</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"from"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"to"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">220</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"color"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(200, 50, 50, .75)"</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    colorPlate</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#fff"</span><span class="pun">,</span><span class="pln">
+    borderShadowWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    borders</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    needleType</span><span class="pun">:</span><span class="pln"> </span><span class="str">"arrow"</span><span class="pun">,</span><span class="pln">
+    needleWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+    animationDuration</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1500</span><span class="pun">,</span><span class="pln">
+    animationRule</span><span class="pun">:</span><span class="pln"> </span><span class="str">"linear"</span><span class="pun">,</span><span class="pln">
+    tickSide</span><span class="pun">:</span><span class="pln"> </span><span class="str">"left"</span><span class="pun">,</span><span class="pln">
+    numberSide</span><span class="pun">:</span><span class="pln"> </span><span class="str">"left"</span><span class="pun">,</span><span class="pln">
+    needleSide</span><span class="pun">:</span><span class="pln"> </span><span class="str">"left"</span><span class="pun">,</span><span class="pln">
+    barStrokeWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln">
+    barBeginCircle</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">75</span><span class="pln">
+</span><span class="pun">}).</span><span class="pln">draw</span><span class="pun">();</span></pre>                    </div>                </div><div id="tabs-container12" class="tabs-container" style="display: none;">                    <input id="tab-html12" type="radio" class="tab-html" name="tab-group">                    <label for="tab-html12">HTML</label>                    <input id="tab-js12" type="radio" class="tab-js" name="tab-group">                    <label for="tab-js12">JS</label>                    <span class="icon-circle-with-cross"></span>                    <div class="tabs-content">                        <pre class="tab-html-content prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;canvas</span><span class="pln"> </span><span class="atn">data-type</span><span class="pun">=</span><span class="atv">"linear-gauge"</span><span class="pln">
+    </span><span class="atn">data-width</span><span class="pun">=</span><span class="atv">"120"</span><span class="pln">
+    </span><span class="atn">data-height</span><span class="pun">=</span><span class="atv">"400"</span><span class="pln">
+    </span><span class="atn">data-units</span><span class="pun">=</span><span class="atv">"°C"</span><span class="pln">
+    </span><span class="atn">data-min-value</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-start-angle</span><span class="pun">=</span><span class="atv">"90"</span><span class="pln">
+    </span><span class="atn">data-ticks-angle</span><span class="pun">=</span><span class="atv">"180"</span><span class="pln">
+    </span><span class="atn">data-value-box</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-max-value</span><span class="pun">=</span><span class="atv">"220"</span><span class="pln">
+    </span><span class="atn">data-major-ticks</span><span class="pun">=</span><span class="atv">"0,20,40,60,80,100,120,140,160,180,200,220"</span><span class="pln">
+    </span><span class="atn">data-minor-ticks</span><span class="pun">=</span><span class="atv">"2"</span><span class="pln">
+    </span><span class="atn">data-stroke-ticks</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-highlights</span><span class="pun">=</span><span class="atv">'[ {"from": 100, "to": 220, "color": "rgba(200, 50, 50, .75)"} ]'</span><span class="pln">
+    </span><span class="atn">data-color-plate</span><span class="pun">=</span><span class="atv">"#fff"</span><span class="pln">
+    </span><span class="atn">data-border-shadow-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-borders</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-needle-type</span><span class="pun">=</span><span class="atv">"arrow"</span><span class="pln">
+    </span><span class="atn">data-needle-width</span><span class="pun">=</span><span class="atv">"2"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-size</span><span class="pun">=</span><span class="atv">"7"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-outer</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-needle-circle-inner</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-animation-duration</span><span class="pun">=</span><span class="atv">"1500"</span><span class="pln">
+    </span><span class="atn">data-animation-rule</span><span class="pun">=</span><span class="atv">"linear"</span><span class="pln">
+    </span><span class="atn">data-bar-width</span><span class="pun">=</span><span class="atv">"10"</span><span class="pln">
+    </span><span class="atn">data-value</span><span class="pun">=</span><span class="atv">"35"</span><span class="pln">
+</span><span class="tag">&gt;&lt;/canvas&gt;</span></pre>                        <pre class="tab-js-content prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> gauge </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">LinearGauge</span><span class="pun">({</span><span class="pln">
+    renderTo</span><span class="pun">:</span><span class="pln"> </span><span class="str">'canvas-id'</span><span class="pun">,</span><span class="pln">
+    width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">120</span><span class="pun">,</span><span class="pln">
+    height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">400</span><span class="pun">,</span><span class="pln">
+    units</span><span class="pun">:</span><span class="pln"> </span><span class="str">"°C"</span><span class="pun">,</span><span class="pln">
+    minValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    startAngle</span><span class="pun">:</span><span class="pln"> </span><span class="lit">90</span><span class="pun">,</span><span class="pln">
+    ticksAngle</span><span class="pun">:</span><span class="pln"> </span><span class="lit">180</span><span class="pun">,</span><span class="pln">
+    valueBox</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    maxValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">220</span><span class="pun">,</span><span class="pln">
+    majorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="str">"0"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"20"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"40"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"60"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"80"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"100"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"120"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"140"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"160"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"180"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"200"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"220"</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    minorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+    strokeTicks</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    highlights</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"from"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"to"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">220</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"color"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(200, 50, 50, .75)"</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    colorPlate</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#fff"</span><span class="pun">,</span><span class="pln">
+    borderShadowWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    borders</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    needleType</span><span class="pun">:</span><span class="pln"> </span><span class="str">"arrow"</span><span class="pun">,</span><span class="pln">
+    needleWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+    needleCircleSize</span><span class="pun">:</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln">
+    needleCircleOuter</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    needleCircleInner</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    animationDuration</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1500</span><span class="pun">,</span><span class="pln">
+    animationRule</span><span class="pun">:</span><span class="pln"> </span><span class="str">"linear"</span><span class="pun">,</span><span class="pln">
+    barWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+    value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">35</span><span class="pln">
+</span><span class="pun">}).</span><span class="pln">draw</span><span class="pun">();</span></pre>                    </div>                </div><div id="tabs-container13" class="tabs-container" style="display: none;">                    <input id="tab-html13" type="radio" class="tab-html" name="tab-group">                    <label for="tab-html13">HTML</label>                    <input id="tab-js13" type="radio" class="tab-js" name="tab-group">                    <label for="tab-js13">JS</label>                    <span class="icon-circle-with-cross"></span>                    <div class="tabs-content">                        <pre class="tab-html-content prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;canvas</span><span class="pln"> </span><span class="atn">data-type</span><span class="pun">=</span><span class="atv">"linear-gauge"</span><span class="pln">
+    </span><span class="atn">data-width</span><span class="pun">=</span><span class="atv">"400"</span><span class="pln">
+    </span><span class="atn">data-height</span><span class="pun">=</span><span class="atv">"150"</span><span class="pln">
+    </span><span class="atn">data-min-value</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-max-value</span><span class="pun">=</span><span class="atv">"100"</span><span class="pln">
+    </span><span class="atn">data-major-ticks</span><span class="pun">=</span><span class="atv">"0,20,40,60,80,100"</span><span class="pln">
+    </span><span class="atn">data-minor-ticks</span><span class="pun">=</span><span class="atv">"10"</span><span class="pln">
+    </span><span class="atn">data-stroke-ticks</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-color-plate</span><span class="pun">=</span><span class="atv">"#fff"</span><span class="pln">
+    </span><span class="atn">data-border-shadow-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-borders</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-bar-begin-circle</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-tick-side</span><span class="pun">=</span><span class="atv">"left"</span><span class="pln">
+    </span><span class="atn">data-number-side</span><span class="pun">=</span><span class="atv">"left"</span><span class="pln">
+    </span><span class="atn">data-needle-side</span><span class="pun">=</span><span class="atv">"left"</span><span class="pln">
+    </span><span class="atn">data-needle-type</span><span class="pun">=</span><span class="atv">"line"</span><span class="pln">
+    </span><span class="atn">data-needle-width</span><span class="pun">=</span><span class="atv">"3"</span><span class="pln">
+    </span><span class="atn">data-color-needle</span><span class="pun">=</span><span class="atv">"#222"</span><span class="pln">
+    </span><span class="atn">data-color-needle-end</span><span class="pun">=</span><span class="atv">"#222"</span><span class="pln">
+    </span><span class="atn">data-animation-duration</span><span class="pun">=</span><span class="atv">"1500"</span><span class="pln">
+    </span><span class="atn">data-animation-rule</span><span class="pun">=</span><span class="atv">"linear"</span><span class="pln">
+    </span><span class="atn">data-animation-target</span><span class="pun">=</span><span class="atv">"plate"</span><span class="pln">
+    </span><span class="atn">data-bar-width</span><span class="pun">=</span><span class="atv">"5"</span><span class="pln">
+    </span><span class="atn">data-ticks-width</span><span class="pun">=</span><span class="atv">"50"</span><span class="pln">
+    </span><span class="atn">data-ticks-width-minor</span><span class="pun">=</span><span class="atv">"15"</span><span class="pln">
+</span><span class="tag">&gt;&lt;/canvas&gt;</span></pre>                        <pre class="tab-js-content prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> gauge </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">LinearGauge</span><span class="pun">({</span><span class="pln">
+    renderTo</span><span class="pun">:</span><span class="pln"> </span><span class="str">'canvas-id'</span><span class="pun">,</span><span class="pln">
+    width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">400</span><span class="pun">,</span><span class="pln">
+    height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">150</span><span class="pun">,</span><span class="pln">
+    minValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    maxValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">,</span><span class="pln">
+    majorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="str">"0"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"20"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"40"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"60"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"80"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"100"</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    minorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+    strokeTicks</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    colorPlate</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#fff"</span><span class="pun">,</span><span class="pln">
+    borderShadowWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    borders</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    barBeginCircle</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    tickSide</span><span class="pun">:</span><span class="pln"> </span><span class="str">"left"</span><span class="pun">,</span><span class="pln">
+    numberSide</span><span class="pun">:</span><span class="pln"> </span><span class="str">"left"</span><span class="pun">,</span><span class="pln">
+    needleSide</span><span class="pun">:</span><span class="pln"> </span><span class="str">"left"</span><span class="pun">,</span><span class="pln">
+    needleType</span><span class="pun">:</span><span class="pln"> </span><span class="str">"line"</span><span class="pun">,</span><span class="pln">
+    needleWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln">
+    colorNeedle</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#222"</span><span class="pun">,</span><span class="pln">
+    colorNeedleEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#222"</span><span class="pun">,</span><span class="pln">
+    animationDuration</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1500</span><span class="pun">,</span><span class="pln">
+    animationRule</span><span class="pun">:</span><span class="pln"> </span><span class="str">"linear"</span><span class="pun">,</span><span class="pln">
+    animationTarget</span><span class="pun">:</span><span class="pln"> </span><span class="str">"plate"</span><span class="pun">,</span><span class="pln">
+    barWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span><span class="pln">
+    ticksWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50</span><span class="pun">,</span><span class="pln">
+    ticksWidthMinor</span><span class="pun">:</span><span class="pln"> </span><span class="lit">15</span><span class="pln">
+</span><span class="pun">}).</span><span class="pln">draw</span><span class="pun">();</span></pre>                    </div>                </div><div id="tabs-container14" class="tabs-container" style="display: none;">                    <input id="tab-html14" type="radio" class="tab-html" name="tab-group">                    <label for="tab-html14">HTML</label>                    <input id="tab-js14" type="radio" class="tab-js" name="tab-group">                    <label for="tab-js14">JS</label>                    <span class="icon-circle-with-cross"></span>                    <div class="tabs-content">                        <pre class="tab-html-content prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;canvas</span><span class="pln"> </span><span class="atn">data-type</span><span class="pun">=</span><span class="atv">"linear-gauge"</span><span class="pln">
+    </span><span class="atn">data-width</span><span class="pun">=</span><span class="atv">"400"</span><span class="pln">
+    </span><span class="atn">data-height</span><span class="pun">=</span><span class="atv">"150"</span><span class="pln">
+    </span><span class="atn">data-units</span><span class="pun">=</span><span class="atv">"°C"</span><span class="pln">
+    </span><span class="atn">data-title</span><span class="pun">=</span><span class="atv">"Temperature"</span><span class="pln">
+    </span><span class="atn">data-min-value</span><span class="pun">=</span><span class="atv">"-50"</span><span class="pln">
+    </span><span class="atn">data-max-value</span><span class="pun">=</span><span class="atv">"50"</span><span class="pln">
+    </span><span class="atn">data-major-ticks</span><span class="pun">=</span><span class="atv">"[-50,-40,-30,-20,-10,0,10,20,30,40,50]"</span><span class="pln">
+    </span><span class="atn">data-minor-ticks</span><span class="pun">=</span><span class="atv">"5"</span><span class="pln">
+    </span><span class="atn">data-stroke-ticks</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">data-ticks-width</span><span class="pun">=</span><span class="atv">"15"</span><span class="pln">
+    </span><span class="atn">data-ticks-width-minor</span><span class="pun">=</span><span class="atv">"7.5"</span><span class="pln">
+    </span><span class="atn">data-highlights</span><span class="pun">=</span><span class="atv">'[ {"from": -50, "to": 0, "color": "rgba(0,0, 255, .3)"},
+        {"from": 0, "to": 50, "color": "rgba(255, 0, 0, .3)"} ]'</span><span class="pln">
+    </span><span class="atn">data-color-major-ticks</span><span class="pun">=</span><span class="atv">"#ffe66a"</span><span class="pln">
+    </span><span class="atn">data-color-minor-ticks</span><span class="pun">=</span><span class="atv">"#ffe66a"</span><span class="pln">
+    </span><span class="atn">data-color-title</span><span class="pun">=</span><span class="atv">"#eee"</span><span class="pln">
+    </span><span class="atn">data-color-units</span><span class="pun">=</span><span class="atv">"#ccc"</span><span class="pln">
+    </span><span class="atn">data-color-numbers</span><span class="pun">=</span><span class="atv">"#eee"</span><span class="pln">
+    </span><span class="atn">data-color-plate</span><span class="pun">=</span><span class="atv">"#2465c0"</span><span class="pln">
+    </span><span class="atn">data-color-plate-end</span><span class="pun">=</span><span class="atv">"#327ac0"</span><span class="pln">
+    </span><span class="atn">data-border-shadow-width</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-borders</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+    </span><span class="atn">data-border-radius</span><span class="pun">=</span><span class="atv">"10"</span><span class="pln">
+    </span><span class="atn">data-needle-type</span><span class="pun">=</span><span class="atv">"arrow"</span><span class="pln">
+    </span><span class="atn">data-needle-width</span><span class="pun">=</span><span class="atv">"3"</span><span class="pln">
+    </span><span class="atn">data-animation-duration</span><span class="pun">=</span><span class="atv">"1500"</span><span class="pln">
+    </span><span class="atn">data-animation-rule</span><span class="pun">=</span><span class="atv">"linear"</span><span class="pln">
+    </span><span class="atn">data-color-needle</span><span class="pun">=</span><span class="atv">"#222"</span><span class="pln">
+    </span><span class="atn">data-color-needle-end</span><span class="pun">=</span><span class="atv">""</span><span class="pln">
+    </span><span class="atn">data-color-bar-progress</span><span class="pun">=</span><span class="atv">"#327ac0"</span><span class="pln">
+    </span><span class="atn">data-color-bar</span><span class="pun">=</span><span class="atv">"#f5f5f5"</span><span class="pln">
+    </span><span class="atn">data-bar-stroke</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln">
+    </span><span class="atn">data-bar-width</span><span class="pun">=</span><span class="atv">"8"</span><span class="pln">
+    </span><span class="atn">data-bar-begin-circle</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln">
+</span><span class="tag">&gt;&lt;/canvas&gt;</span></pre>                        <pre class="tab-js-content prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> gauge </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">LinearGauge</span><span class="pun">({</span><span class="pln">
+    renderTo</span><span class="pun">:</span><span class="pln"> </span><span class="str">'canvas-id'</span><span class="pun">,</span><span class="pln">
+    width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">400</span><span class="pun">,</span><span class="pln">
+    height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">150</span><span class="pun">,</span><span class="pln">
+    units</span><span class="pun">:</span><span class="pln"> </span><span class="str">"°C"</span><span class="pun">,</span><span class="pln">
+    title</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Temperature"</span><span class="pun">,</span><span class="pln">
+    minValue</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="lit">50</span><span class="pun">,</span><span class="pln">
+    maxValue</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50</span><span class="pun">,</span><span class="pln">
+    majorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="pun">-</span><span class="lit">50</span><span class="pun">,</span><span class="pln">
+        </span><span class="pun">-</span><span class="lit">40</span><span class="pun">,</span><span class="pln">
+        </span><span class="pun">-</span><span class="lit">30</span><span class="pun">,</span><span class="pln">
+        </span><span class="pun">-</span><span class="lit">20</span><span class="pun">,</span><span class="pln">
+        </span><span class="pun">-</span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+        </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+        </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+        </span><span class="lit">20</span><span class="pun">,</span><span class="pln">
+        </span><span class="lit">30</span><span class="pun">,</span><span class="pln">
+        </span><span class="lit">40</span><span class="pun">,</span><span class="pln">
+        </span><span class="lit">50</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    minorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span><span class="pln">
+    strokeTicks</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    ticksWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">15</span><span class="pun">,</span><span class="pln">
+    ticksWidthMinor</span><span class="pun">:</span><span class="pln"> </span><span class="lit">7.5</span><span class="pun">,</span><span class="pln">
+    highlights</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"from"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="lit">50</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"to"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"color"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(0,0, 255, .3)"</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"from"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"to"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50</span><span class="pun">,</span><span class="pln">
+            </span><span class="str">"color"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"rgba(255, 0, 0, .3)"</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">],</span><span class="pln">
+    colorMajorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ffe66a"</span><span class="pun">,</span><span class="pln">
+    colorMinorTicks</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ffe66a"</span><span class="pun">,</span><span class="pln">
+    colorTitle</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#eee"</span><span class="pun">,</span><span class="pln">
+    colorUnits</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#ccc"</span><span class="pun">,</span><span class="pln">
+    colorNumbers</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#eee"</span><span class="pun">,</span><span class="pln">
+    colorPlate</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#2465c0"</span><span class="pun">,</span><span class="pln">
+    colorPlateEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#327ac0"</span><span class="pun">,</span><span class="pln">
+    borderShadowWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    borders</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+    borderRadius</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+    needleType</span><span class="pun">:</span><span class="pln"> </span><span class="str">"arrow"</span><span class="pun">,</span><span class="pln">
+    needleWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln">
+    animationDuration</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1500</span><span class="pun">,</span><span class="pln">
+    animationRule</span><span class="pun">:</span><span class="pln"> </span><span class="str">"linear"</span><span class="pun">,</span><span class="pln">
+    colorNeedle</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#222"</span><span class="pun">,</span><span class="pln">
+    colorNeedleEnd</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
+    colorBarProgress</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#327ac0"</span><span class="pun">,</span><span class="pln">
+    colorBar</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#f5f5f5"</span><span class="pun">,</span><span class="pln">
+    barStroke</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+    barWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">8</span><span class="pun">,</span><span class="pln">
+    barBeginCircle</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pln">
+</span><span class="pun">}).</span><span class="pln">draw</span><span class="pun">();</span></pre>                    </div>                </div> <script> $('.orgs').slick({ dots: true, infinite: true, speed: 300, slidesToShow: 1, autoplay: true, autoplaySpeed: 7000 }); </script> <script> function fontReady() { WebFont.load({ google: { families: ['Lato:400,700,400italic:latin', 'Volkhov::latin'] } }); } </script> <script async="" src="./Examples_files/webfont.js.descarga" onload="fontReady()"></script> <noscript><link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'> </noscript> <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-83863647-1', 'auto'); ga('require', 'linkid'); ga('send', 'pageview'); </script>
+</body></html>
